@@ -8,14 +8,56 @@ import EvidencePanel from './components/EvidencePanel';
 import ClusterView from './components/ClusterView';
 import TransactionsLedger from './components/TransactionsLedger';
 import ErrorBoundary from './components/ErrorBoundary';
+import LoginPage from './components/LoginPage';
 import { apiClient } from './api/client';
 import { 
   RefreshCw,
   X
 } from 'lucide-react';
 
+const VALID_TABS = ['flags', 'graph', 'clusters', 'transactions', 'ingest'];
+
+const TAB_URL_MAP = {
+  flags: '/flags',
+  graph: '/graph',
+  clusters: '/clusters',
+  transactions: '/transactions',
+  ingest: '/ingest'
+};
+
+const TAB_PAGE_TITLES = {
+  flags: 'Threat Flags & Triage · NTRO Bitcoin Intelligence',
+  graph: 'Forensic Link Graph · NTRO Bitcoin Intelligence',
+  clusters: 'Entity Clusters · NTRO Bitcoin Intelligence',
+  transactions: 'UTXO Ledger Explorer · NTRO Bitcoin Intelligence',
+  ingest: 'Data Ingestion & Pipeline · NTRO Bitcoin Intelligence'
+};
+
+function getTabFromUrl() {
+  if (typeof window === 'undefined') return 'flags';
+  // 1. Check pathname: /graph -> 'graph'
+  const path = window.location.pathname.replace(/^\/+|\/+$/g, '').split('/')[0];
+  if (VALID_TABS.includes(path)) return path;
+
+  // 2. Check hash fallback: #/graph or #graph
+  const hash = window.location.hash.replace(/^#\/?/, '').split('?')[0];
+  if (VALID_TABS.includes(hash)) return hash;
+
+  return 'flags';
+}
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState('flags');
+  const [currentUser, setCurrentUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('ntro_auth_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const [showLoginScreen, setShowLoginScreen] = useState(false);
+  const [activeTab, setActiveTab] = useState(() => getTabFromUrl());
   const [stats, setStats] = useState(null);
   const [flags, setFlags] = useState([]);
   const [clusters, setClusters] = useState([]);
@@ -27,6 +69,30 @@ export default function App() {
   const [graphHops, setGraphHops] = useState(2);
   const [backendStatus, setBackendStatus] = useState({ isLive: false, mode: 'standalone_demo', port: 8000 });
   const [showBanner, setShowBanner] = useState(true);
+
+  // Synchronize browser URL bar and Document Title whenever activeTab changes
+  useEffect(() => {
+    const targetPath = TAB_URL_MAP[activeTab] || '/flags';
+    const currentPath = window.location.pathname;
+    if (currentPath !== targetPath && !(currentPath === '/' && activeTab === 'flags')) {
+      window.history.pushState({ tab: activeTab }, '', targetPath);
+    }
+    document.title = TAB_PAGE_TITLES[activeTab] || 'NTRO Bitcoin Intelligence';
+  }, [activeTab]);
+
+  // Support Browser Back / Forward buttons and Hash changes
+  useEffect(() => {
+    const handleNavigation = () => {
+      const currentTab = getTabFromUrl();
+      setActiveTab(currentTab);
+    };
+    window.addEventListener('popstate', handleNavigation);
+    window.addEventListener('hashchange', handleNavigation);
+    return () => {
+      window.removeEventListener('popstate', handleNavigation);
+      window.removeEventListener('hashchange', handleNavigation);
+    };
+  }, []);
 
   // Subscribe to backend health status updates
   useEffect(() => {
@@ -180,8 +246,20 @@ export default function App() {
     }
   };
 
+  if (!currentUser || showLoginScreen) {
+    return (
+      <LoginPage 
+        onLogin={(userProfile) => {
+          setCurrentUser(userProfile);
+          setShowLoginScreen(false);
+        }} 
+        onCancel={currentUser ? () => setShowLoginScreen(false) : null}
+      />
+    );
+  }
+
   return (
-    <div className="app-container">
+    <div className={`app-container ${activeTab === 'graph' ? 'graph-viewport-mode' : ''}`}>
       
       {/* Top Header */}
       <Navbar
@@ -192,6 +270,13 @@ export default function App() {
         onQuickSeed={handleQuickSeed}
         seeding={seeding}
         stats={stats}
+        currentUser={currentUser}
+        onShowLogin={() => setShowLoginScreen(true)}
+        onLogout={() => {
+          localStorage.removeItem('ntro_auth_user');
+          setCurrentUser(null);
+          setShowLoginScreen(true);
+        }}
       />
 
       {/* Offline / Standalone Forensics Status Banner */}
@@ -237,13 +322,21 @@ export default function App() {
       {/* Main Content Workspace */}
       <main className="main-content">
         
-        {/* Executive Metrics Overview */}
-        <MetricsOverview stats={stats} />
+        {/* Executive Metrics Overview - Visible only on the main Threat Flags triage & overview section */}
+        {activeTab === 'flags' && (
+          <MetricsOverview stats={stats} onNavigateTab={handleTabChange} />
+        )}
 
         {/* Dynamic Views & Collapsible Dossier Drawer protected by ErrorBoundary */}
-        <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+        <div 
+          className={activeTab === 'graph' ? 'graph-workspace-flex' : ''} 
+          style={activeTab === 'graph' ? undefined : { display: 'flex', gap: '20px', alignItems: 'flex-start' }}
+        >
           
-          <div style={{ flex: 1, minWidth: 0 }}>
+          <div 
+            className={activeTab === 'graph' ? 'graph-container-col' : ''} 
+            style={activeTab === 'graph' ? undefined : { flex: 1, minWidth: 0 }}
+          >
             <ErrorBoundary>
               {activeTab === 'flags' && (
                 <FlagsTable
@@ -290,8 +383,8 @@ export default function App() {
                 <IngestionView
                   onIngestionComplete={async () => {
                     await loadAllData();
-                    setActiveTab('flags');
                   }}
+                  onNavigateTab={handleTabChange}
                 />
               )}
             </ErrorBoundary>

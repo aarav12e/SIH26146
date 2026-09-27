@@ -29,20 +29,37 @@ export default function GraphView({
   const [searchTerm, setSearchTerm] = useState('');
   const [nodeFilter, setNodeFilter] = useState('all');
 
-  // Resize canvas smoothly to container width
+  // Resize canvas dynamically to exact container dimensions with zero window scroll
   useEffect(() => {
+    if (!containerRef.current) return;
+
     function updateDimensions() {
       if (containerRef.current) {
-        const { clientWidth } = containerRef.current;
+        const { clientWidth, clientHeight } = containerRef.current;
+        const rect = containerRef.current.getBoundingClientRect();
+        const availableHeight = clientHeight > 100 
+          ? clientHeight 
+          : Math.max(480, Math.floor(window.innerHeight - rect.top - 20));
+        
         setDimensions({
           width: clientWidth || 1000,
-          height: 680
+          height: availableHeight
         });
       }
     }
+
     updateDimensions();
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateDimensions();
+    });
+    resizeObserver.observe(containerRef.current);
     window.addEventListener('resize', updateDimensions);
-    return () => window.removeEventListener('resize', updateDimensions);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', updateDimensions);
+    };
   }, []);
 
   // Filter nodes & links safely
@@ -283,7 +300,7 @@ export default function GraphView({
   const isSubgraphView = filteredData.nodes.length <= 20;
 
   return (
-    <div className="card" style={{ 
+    <div className="card graph-card-full" style={{ 
       overflow: 'hidden', 
       position: 'relative',
       background: 'var(--white)',
@@ -445,9 +462,10 @@ export default function GraphView({
       {/* Force Graph Canvas Container with Blueprint Forensic Grid */}
       <div 
         ref={containerRef} 
+        className="graph-canvas-box"
         style={{ 
           width: '100%', 
-          height: '680px', 
+          height: '100%', 
           background: '#f8fafc',
           backgroundImage: 'radial-gradient(#cbd5e1 1.2px, transparent 1.2px)',
           backgroundSize: '24px 24px',

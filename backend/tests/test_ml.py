@@ -36,7 +36,8 @@ class TestML(unittest.TestCase):
         self.assertGreater(len(unique_clusters), 1, "Should have more than 1 cluster")
         self.assertLess(len(unique_clusters), len(entity_ids), "Clusters should not equal node count")
 
-        anomaly_scores = run_anomaly_detection()
+        feature_engine.compute_all_features(G)
+        anomaly_scores = run_anomaly_detection(wallets_filter=list(entity_ids.keys()))
         self.assertEqual(len(anomaly_scores), len(entity_ids))
 
         scores = list(anomaly_scores.values())

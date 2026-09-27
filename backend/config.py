@@ -9,6 +9,8 @@ BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
+UPLOADS_DIR = DATA_DIR / "uploads"
+EMBEDDED_DB_DIR = DATA_DIR / "embedded_db"
 GEOIP_DIR = DATA_DIR / "geoip"
 
 GEOIP_CITY_MMDB = GEOIP_DIR / "GeoLite2-City.mmdb"
@@ -18,6 +20,9 @@ GEOIP_ASN_MMDB = GEOIP_DIR / "GeoLite2-ASN.mmdb"
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 DB_NAME = os.getenv("DB_NAME", "bitcoin_forensics")
 USE_OFFLINE_STORAGE = os.getenv("USE_OFFLINE_STORAGE", "auto").lower()
+
+# AI Intelligence (Google Gemini)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 # Pipeline & ML Thresholds (NTRO §6)
 ANOMALY_CONTAMINATION = float(os.getenv("ANOMALY_CONTAMINATION", "0.15"))

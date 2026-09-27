@@ -82,12 +82,12 @@
   --border-default: #d1d5db;
   --border-strong:  #9ca3af;
 
-  /* Text */
-  --text-primary:   #111827;
-  --text-secondary: #374151;
-  --text-tertiary:  #6b7280;
-  --text-muted:     #9ca3af;
-  --text-placeholder: #d1d5db;
+  /* Text (High-Contrast Light Theme) */
+  --text-primary:   #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary:  #475569;
+  --text-muted:     #64748b;
+  --text-placeholder: #94a3b8;
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -404,21 +404,21 @@ select.input-field {
 }
 
 .forensics-table th {
-  background: var(--gray-50);
-  padding: 10px 16px;
-  font-size: 0.67rem;
-  font-weight: 700;
+  background: #f8fafc;
+  padding: 11px 16px;
+  font-size: 0.69rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--text-muted);
-  border-bottom: 1px solid var(--border-subtle);
+  letter-spacing: 0.06em;
+  color: #334155;
+  border-bottom: 1.5px solid #cbd5e1;
   white-space: nowrap;
 }
 
 .forensics-table td {
   padding: 12px 16px;
-  border-bottom: 1px solid var(--border-faint);
-  color: var(--text-primary);
+  border-bottom: 1px solid #e2e8f0;
+  color: #0f172a;
   vertical-align: middle;
 }
 
@@ -662,3 +662,99 @@ select.input-field {
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
+
+/* ============================================================
+   LOGIN BACKGROUND VIDEO & GLASSMORPHISM
+   ============================================================ */
+/* Background video positioning */
+.login-bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Semi-transparent dark veil over video so text and inputs pop */
+.video-overlay-veil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, rgba(15, 23, 42, 0.65) 0%, rgba(2, 6, 23, 0.88) 100%);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+/* Glassmorphic Login Card */
+.login-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 14px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================================================
+   GRAPH VIEWPORT (Zero Page Scroll)
+   ============================================================ */
+.app-container.graph-viewport-mode {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.app-container.graph-viewport-mode .main-content {
+  flex: 1;
+  min-height: 0;
+  height: calc(100vh - 58px);
+  max-height: calc(100vh - 58px);
+  padding: 12px 24px 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.graph-workspace-flex {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.graph-container-col {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.graph-card-full {
+  height: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.graph-canvas-box {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+

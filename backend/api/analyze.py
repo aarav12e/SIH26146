@@ -55,7 +55,7 @@ def execute_pipeline():
     entity_ids, embedding_neighbors = run_entity_clustering(transactions, G)
 
     # 4. Focus Area 2: Anomaly Detection
-    anomaly_scores = run_anomaly_detection()
+    anomaly_scores = run_anomaly_detection(wallets_filter=list(entity_ids.keys()))
 
     # 5. Focus Area 3: Peeling-Chain & CoinJoin Mixing Detection
     peel_flags_per_tx, wallet_peels = detect_peeling_chains(G)

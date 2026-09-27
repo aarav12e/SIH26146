@@ -80,6 +80,24 @@ class TestAPIEndpoints(unittest.TestCase):
         self.assertEqual(res_txs.status_code, 200)
         self.assertGreater(len(res_txs.json()["transactions"]), 0)
 
+    def test_ai_explain_endpoint(self):
+        """Tests /api/ai/explain endpoint for AI threat vs false positive evaluation."""
+        payload = {
+            "entity_id": "bc1q_smurf_structuring_ring",
+            "risk_score": 0.88,
+            "anomaly_score": 0.72,
+            "reasons": ["Rapid peeling chain hopping", "High anomaly score"],
+            "heuristics": ["peeling_chain", "coinjoin"],
+            "context": {"total_received_btc": 14.5}
+        }
+        res = self.client.post("/api/ai/explain", json=payload)
+        self.assertEqual(res.status_code, 200)
+        data = res.json()
+        self.assertIn("verdict", data)
+        self.assertIn("briefing", data)
+        self.assertTrue(data["is_malicious"])
+        self.assertGreater(len(data["briefing"]), 20)
+
 if __name__ == "__main__":
     unittest.main()
 

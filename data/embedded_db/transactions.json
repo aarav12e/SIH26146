@@ -20,9 +20,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000395,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0000_bd3c"
   },
   {
@@ -46,9 +45,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000187,
-    "geo_country": "India",
-    "geo_asn": "AS4755 Tata Communications",
-    "geo_city": "New Delhi",
+    "geo_country": "IN",
+    "geo_asn": "AS4755",
     "_id": "tx_norm_0001_915e"
   },
   {
@@ -72,9 +70,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.00028,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0002_5737"
   },
   {
@@ -98,9 +95,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000162,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0003_d374"
   },
   {
@@ -124,9 +120,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000238,
-    "geo_country": "India",
-    "geo_asn": "AS4755 Tata Communications",
-    "geo_city": "New Delhi",
+    "geo_country": "IN",
+    "geo_asn": "AS4755",
     "_id": "tx_norm_0004_53b7"
   },
   {
@@ -150,9 +145,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000469,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0005_242c"
   },
   {
@@ -176,9 +170,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000382,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0006_1bbb"
   },
   {
@@ -202,9 +195,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000252,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0007_8412"
   },
   {
@@ -228,9 +220,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000207,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0008_ffc8"
   },
   {
@@ -254,9 +245,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000198,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0009_8656"
   },
   {
@@ -280,9 +270,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.00023,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0010_d4b0"
   },
   {
@@ -306,9 +295,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000126,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0011_f9c3"
   },
   {
@@ -332,9 +320,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000466,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0012_8577"
   },
   {
@@ -358,9 +345,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000399,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0013_7dad"
   },
   {
@@ -384,9 +370,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000136,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0014_1c0f"
   },
   {
@@ -410,9 +395,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000269,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0015_2043"
   },
   {
@@ -436,9 +420,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000321,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0016_12f0"
   },
   {
@@ -462,9 +445,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000236,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0017_5b22"
   },
   {
@@ -488,9 +470,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000405,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0018_91f7"
   },
   {
@@ -514,9 +495,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000161,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0019_d333"
   },
   {
@@ -540,9 +520,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000472,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0020_f0f3"
   },
   {
@@ -566,9 +545,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000479,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0021_25ed"
   },
   {
@@ -592,9 +570,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.00029,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0022_9cbf"
   },
   {
@@ -618,9 +595,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000472,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0023_d159"
   },
   {
@@ -644,9 +620,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.00036,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0024_8027"
   },
   {
@@ -670,9 +645,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000108,
-    "geo_country": "Germany",
-    "geo_asn": "AS24940 Hetzner Online GmbH",
-    "geo_city": "Frankfurt",
+    "geo_country": "DE",
+    "geo_asn": "AS24940",
     "_id": "tx_norm_0025_9dcd"
   },
   {
@@ -696,9 +670,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000462,
-    "geo_country": "India",
-    "geo_asn": "AS4755 Tata Communications",
-    "geo_city": "New Delhi",
+    "geo_country": "IN",
+    "geo_asn": "AS4755",
     "_id": "tx_norm_0026_ec11"
   },
   {
@@ -722,9 +695,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000186,
-    "geo_country": "United States",
-    "geo_asn": "AS15169 Google Cloud Platform",
-    "geo_city": "Council Bluffs",
+    "geo_country": "US",
+    "geo_asn": "AS15169",
     "_id": "tx_norm_0027_31df"
   },
   {
@@ -748,9 +720,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000139,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0028_7e59"
   },
   {
@@ -774,9 +745,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000494,
-    "geo_country": "India",
-    "geo_asn": "AS4755 Tata Communications",
-    "geo_city": "New Delhi",
+    "geo_country": "IN",
+    "geo_asn": "AS4755",
     "_id": "tx_norm_0029_2931"
   },
   {
@@ -800,9 +770,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000176,
-    "geo_country": "India",
-    "geo_asn": "AS4755 Tata Communications",
-    "geo_city": "New Delhi",
+    "geo_country": "IN",
+    "geo_asn": "AS4755",
     "_id": "tx_norm_0030_82d8"
   },
   {
@@ -826,9 +795,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000469,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0031_8171"
   },
   {
@@ -852,9 +820,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000488,
-    "geo_country": "India",
-    "geo_asn": "AS133982 Vodafone Idea Ltd",
-    "geo_city": "Mumbai",
+    "geo_country": "IN",
+    "geo_asn": "AS133982",
     "_id": "tx_norm_0032_fd26"
   },
   {
@@ -878,9 +845,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000446,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0033_f706"
   },
   {
@@ -904,9 +870,8 @@
     ],
     "script_type": "witness_v0_keyhash",
     "fee": 0.000414,
-    "geo_country": "France",
-    "geo_asn": "AS12876 Scaleway S.A.S.",
-    "geo_city": "Paris",
+    "geo_country": "FR",
+    "geo_asn": "AS12876",
     "_id": "tx_norm_0034_847b"
   },
   {
@@ -932,9 +897,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_peel_000_cb02"
   },
   {
@@ -960,9 +924,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_peel_001_8c96"
   },
   {
@@ -988,9 +951,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_peel_002_47bb"
   },
   {
@@ -1016,9 +978,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Panama",
-    "geo_asn": "AS52468 Privacy Host Corp",
-    "geo_city": "Panama City",
+    "geo_country": "PA",
+    "geo_asn": "AS52468",
     "_id": "tx_peel_003_9acd"
   },
   {
@@ -1044,9 +1005,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_peel_004_1ea2"
   },
   {
@@ -1072,9 +1032,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_peel_005_90ba"
   },
   {
@@ -1100,9 +1059,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_peel_006_9201"
   },
   {
@@ -1128,9 +1086,8 @@
     ],
     "script_type": "P2SH",
     "fee": 0.0004,
-    "geo_country": "Panama",
-    "geo_asn": "AS52468 Privacy Host Corp",
-    "geo_city": "Panama City",
+    "geo_country": "PA",
+    "geo_asn": "AS52468",
     "_id": "tx_peel_007_218a"
   },
   {
@@ -1160,9 +1117,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_mix_000_2165"
   },
   {
@@ -1192,9 +1148,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Netherlands",
-    "geo_asn": "AS200000 Offshore Server Farm",
-    "geo_city": "Amsterdam",
+    "geo_country": "NL",
+    "geo_asn": "AS200000",
     "_id": "tx_mix_001_eca0"
   },
   {
@@ -1224,9 +1179,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Belize",
-    "geo_asn": "AS49870 Offshore Darknet Gateway",
-    "geo_city": "Belize City",
+    "geo_country": "BZ",
+    "geo_asn": "AS49870",
     "_id": "tx_mix_002_775d"
   },
   {
@@ -1256,9 +1210,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_mix_003_f3e9"
   },
   {
@@ -1288,9 +1241,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Netherlands",
-    "geo_asn": "AS200000 Offshore Server Farm",
-    "geo_city": "Amsterdam",
+    "geo_country": "NL",
+    "geo_asn": "AS200000",
     "_id": "tx_mix_004_4f07"
   },
   {
@@ -1320,9 +1272,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Belize",
-    "geo_asn": "AS49870 Offshore Darknet Gateway",
-    "geo_city": "Belize City",
+    "geo_country": "BZ",
+    "geo_asn": "AS49870",
     "_id": "tx_mix_005_a832"
   },
   {
@@ -1352,9 +1303,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_mix_006_ae8f"
   },
   {
@@ -1384,9 +1334,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Netherlands",
-    "geo_asn": "AS200000 Offshore Server Farm",
-    "geo_city": "Amsterdam",
+    "geo_country": "NL",
+    "geo_asn": "AS200000",
     "_id": "tx_mix_007_7b52"
   },
   {
@@ -1416,9 +1365,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Belize",
-    "geo_asn": "AS49870 Offshore Darknet Gateway",
-    "geo_city": "Belize City",
+    "geo_country": "BZ",
+    "geo_asn": "AS49870",
     "_id": "tx_mix_008_a56b"
   },
   {
@@ -1448,9 +1396,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_mix_009_95d5"
   },
   {
@@ -1480,9 +1427,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Netherlands",
-    "geo_asn": "AS200000 Offshore Server Farm",
-    "geo_city": "Amsterdam",
+    "geo_country": "NL",
+    "geo_asn": "AS200000",
     "_id": "tx_mix_010_ff48"
   },
   {
@@ -1512,9 +1458,8 @@
     ],
     "script_type": "P2WSH",
     "fee": 0.0004,
-    "geo_country": "Belize",
-    "geo_asn": "AS49870 Offshore Darknet Gateway",
-    "geo_city": "Belize City",
+    "geo_country": "BZ",
+    "geo_asn": "AS49870",
     "_id": "tx_mix_011_444a"
   },
   {
@@ -1538,9 +1483,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_smurf_000_4d1a"
   },
   {
@@ -1564,9 +1508,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Panama",
-    "geo_asn": "AS52468 Privacy Host Corp",
-    "geo_city": "Panama City",
+    "geo_country": "PA",
+    "geo_asn": "AS52468",
     "_id": "tx_smurf_001_3181"
   },
   {
@@ -1590,9 +1533,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Cyprus",
-    "geo_asn": "AS58061 Mediterranean Financial Proxy",
-    "geo_city": "Limassol",
+    "geo_country": "CY",
+    "geo_asn": "AS58061",
     "_id": "tx_smurf_002_60f0"
   },
   {
@@ -1616,9 +1558,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Romania",
-    "geo_asn": "AS60117 East Europe VPS Pool",
-    "geo_city": "Bucharest",
+    "geo_country": "RO",
+    "geo_asn": "AS60117",
     "_id": "tx_smurf_003_8552"
   },
   {
@@ -1642,9 +1583,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_smurf_004_22c1"
   },
   {
@@ -1668,9 +1608,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Seychelles",
-    "geo_asn": "AS208323 Zwiebelfreunde Tor Relay",
-    "geo_city": "Victoria",
+    "geo_country": "SC",
+    "geo_asn": "AS208323",
     "_id": "tx_smurf_005_9181"
   },
   {
@@ -1694,9 +1633,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Panama",
-    "geo_asn": "AS52468 Privacy Host Corp",
-    "geo_city": "Panama City",
+    "geo_country": "PA",
+    "geo_asn": "AS52468",
     "_id": "tx_smurf_006_feea"
   },
   {
@@ -1720,9 +1658,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Cyprus",
-    "geo_asn": "AS58061 Mediterranean Financial Proxy",
-    "geo_city": "Limassol",
+    "geo_country": "CY",
+    "geo_asn": "AS58061",
     "_id": "tx_smurf_007_f117"
   },
   {
@@ -1746,9 +1683,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Romania",
-    "geo_asn": "AS60117 East Europe VPS Pool",
-    "geo_city": "Bucharest",
+    "geo_country": "RO",
+    "geo_asn": "AS60117",
     "_id": "tx_smurf_008_58f4"
   },
   {
@@ -1772,9 +1708,8 @@
     ],
     "script_type": "P2PKH",
     "fee": 0.0003,
-    "geo_country": "Russia",
-    "geo_asn": "AS48282 Bulletproof Hosting Services",
-    "geo_city": "Moscow",
+    "geo_country": "RU",
+    "geo_asn": "AS48282",
     "_id": "tx_smurf_009_e570"
   }
 ]

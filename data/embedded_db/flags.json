@@ -33,11 +33,35 @@
     "_id": "bc1q_smurf_structuring_ring"
   },
   {
+    "flagged_id": "3rAWMA1pbZNinKXzKqdjAtdoVNm8oXz39",
+    "entity_id": "3rAWMA1pbZNinKXzKqdjAtdoVNm8oXz39",
+    "target_type": "wallet",
+    "anomaly_score": 0.959,
+    "risk_score": 0.836,
+    "entity_cluster_id": "58",
+    "cluster_id": "58",
+    "is_peel": false,
+    "peel_length": 0,
+    "reasons": [
+      "Severe asymmetric fan-out ratio of 18.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+      "Abnormal burst transaction velocity of 13.5 events/hour, characteristic of programmatic bot or rapid hop script.",
+      "High-priority investigative lead: Personalized PageRank guilt-by-association score of 0.84 propagated from seed threat nodes."
+    ],
+    "summary": "Wallet 3rAWMA1pbZ... flagged with risk score 0.84: Severe asymmetric fan-out ratio of 18.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+    "associated_ips": [
+      "174.59.157.7"
+    ],
+    "associated_asns": [
+      "AS16509 Cloud Network"
+    ],
+    "_id": "3rAWMA1pbZNinKXzKqdjAtdoVNm8oXz39"
+  },
+  {
     "flagged_id": "bc1q_mixer_layering_core",
     "entity_id": "bc1q_mixer_layering_core",
     "target_type": "wallet",
-    "anomaly_score": 0.91,
-    "risk_score": 0.773,
+    "anomaly_score": 0.889,
+    "risk_score": 0.756,
     "entity_cluster_id": "42",
     "cluster_id": "42",
     "is_peel": false,
@@ -47,9 +71,9 @@
       "Abnormal burst transaction velocity of 9.0 events/hour, characteristic of programmatic bot or rapid hop script.",
       "Multi-homed broadcast: transactions routed across 3 distinct network IPs, indicating VPN/Tor proxy rotation.",
       "Common-input clustering links this address to Entity Cluster #42 containing 13 co-signed wallet addresses.",
-      "High-priority investigative lead: Personalized PageRank guilt-by-association score of 0.77 propagated from seed threat nodes."
+      "High-priority investigative lead: Personalized PageRank guilt-by-association score of 0.76 propagated from seed threat nodes."
     ],
-    "summary": "Wallet bc1q_mixer... flagged with risk score 0.77: Severe asymmetric fan-out ratio of 12.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+    "summary": "Wallet bc1q_mixer... flagged with risk score 0.76: Severe asymmetric fan-out ratio of 12.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
     "associated_ips": [
       "185.193.88.55",
       "194.26.29.101",
@@ -66,16 +90,16 @@
     "flagged_id": "bc1q_peel_master_darknet",
     "entity_id": "bc1q_peel_master_darknet",
     "target_type": "wallet",
-    "anomaly_score": 0.756,
-    "risk_score": 0.643,
+    "anomaly_score": 0.753,
+    "risk_score": 0.64,
     "entity_cluster_id": "25",
     "cluster_id": "25",
     "is_peel": false,
     "peel_length": 0,
     "reasons": [
-      "Isolation Forest identified multivariate anomaly profile (anomaly score: 0.76, risk: 0.64)."
+      "Isolation Forest identified multivariate anomaly profile (anomaly score: 0.75, risk: 0.64)."
     ],
-    "summary": "Wallet bc1q_peel_... flagged with risk score 0.64: Isolation Forest identified multivariate anomaly profile (anomaly score: 0.76, risk: 0.64).",
+    "summary": "Wallet bc1q_peel_... flagged with risk score 0.64: Isolation Forest identified multivariate anomaly profile (anomaly score: 0.75, risk: 0.64).",
     "associated_ips": [
       "185.220.100.44"
     ],
@@ -88,8 +112,8 @@
     "flagged_id": "bc1q_norm_0010",
     "entity_id": "bc1q_norm_0010",
     "target_type": "wallet",
-    "anomaly_score": 0.654,
-    "risk_score": 0.231,
+    "anomaly_score": 0.736,
+    "risk_score": 0.628,
     "entity_cluster_id": "2",
     "cluster_id": "2",
     "is_peel": false,
@@ -97,7 +121,7 @@
     "reasons": [
       "Abnormal burst transaction velocity of 3.8 events/hour, characteristic of programmatic bot or rapid hop script."
     ],
-    "summary": "Wallet bc1q_norm_... flagged with risk score 0.23: Abnormal burst transaction velocity of 3.8 events/hour, characteristic of programmatic bot or rapid hop script.",
+    "summary": "Wallet bc1q_norm_... flagged with risk score 0.63: Abnormal burst transaction velocity of 3.8 events/hour, characteristic of programmatic bot or rapid hop script.",
     "associated_ips": [
       "89.208.29.50"
     ],
@@ -105,5 +129,85 @@
       "AS24940"
     ],
     "_id": "bc1q_norm_0010"
+  },
+  {
+    "flagged_id": "bc1q_norm_0022",
+    "entity_id": "bc1q_norm_0022",
+    "target_type": "wallet",
+    "anomaly_score": 0.65,
+    "risk_score": 0.233,
+    "entity_cluster_id": "14",
+    "cluster_id": "14",
+    "is_peel": false,
+    "peel_length": 0,
+    "reasons": [
+      "Abnormal burst transaction velocity of 3.8 events/hour, characteristic of programmatic bot or rapid hop script.",
+      "Multi-homed broadcast: transactions routed across 2 distinct network IPs, indicating VPN/Tor proxy rotation."
+    ],
+    "summary": "Wallet bc1q_norm_... flagged with risk score 0.23: Abnormal burst transaction velocity of 3.8 events/hour, characteristic of programmatic bot or rapid hop script.",
+    "associated_ips": [
+      "89.208.29.50",
+      "34.120.55.91"
+    ],
+    "associated_asns": [
+      "AS24940",
+      "AS15169"
+    ],
+    "_id": "bc1q_norm_0022"
+  },
+  {
+    "flagged_id": "bc1q_norm_0021",
+    "entity_id": "bc1q_norm_0021",
+    "target_type": "wallet",
+    "anomaly_score": 0.655,
+    "risk_score": 0.23,
+    "entity_cluster_id": "11",
+    "cluster_id": "11",
+    "is_peel": false,
+    "peel_length": 0,
+    "reasons": [
+      "Severe asymmetric fan-out ratio of 3.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+      "Abnormal burst transaction velocity of 3.0 events/hour, characteristic of programmatic bot or rapid hop script.",
+      "Multi-homed broadcast: transactions routed across 2 distinct network IPs, indicating VPN/Tor proxy rotation."
+    ],
+    "summary": "Wallet bc1q_norm_... flagged with risk score 0.23: Severe asymmetric fan-out ratio of 3.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+    "associated_ips": [
+      "34.120.55.91",
+      "103.251.167.88"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS133982"
+    ],
+    "_id": "bc1q_norm_0021"
+  },
+  {
+    "flagged_id": "bc1qJvBHuXtKpxNt8W5AqFxkokSwtcQ6sS1Hb8",
+    "entity_id": "bc1qJvBHuXtKpxNt8W5AqFxkokSwtcQ6sS1Hb8",
+    "target_type": "wallet",
+    "anomaly_score": 0.654,
+    "risk_score": 0.229,
+    "entity_cluster_id": "42",
+    "cluster_id": "42",
+    "is_peel": false,
+    "peel_length": 0,
+    "reasons": [
+      "Severe asymmetric fan-out ratio of 7.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+      "Abnormal burst transaction velocity of 5.2 events/hour, characteristic of programmatic bot or rapid hop script.",
+      "Multi-homed broadcast: transactions routed across 5 distinct network IPs, indicating VPN/Tor proxy rotation.",
+      "Common-input clustering links this address to Entity Cluster #42 containing 13 co-signed wallet addresses."
+    ],
+    "summary": "Wallet bc1qJvBHuX... flagged with risk score 0.23: Severe asymmetric fan-out ratio of 7.0:1 (top 10% percentile), indicating aggressive fund dispersal or layering.",
+    "associated_ips": [
+      "102.28.3.53",
+      "144.181.36.102",
+      "114.212.139.56",
+      "171.157.23.57",
+      "78.108.70.196"
+    ],
+    "associated_asns": [
+      "AS16509 Cloud Network"
+    ],
+    "_id": "bc1qJvBHuXtKpxNt8W5AqFxkokSwtcQ6sS1Hb8"
   }
 ]

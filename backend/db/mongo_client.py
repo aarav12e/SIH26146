@@ -184,7 +184,8 @@ class DatabaseManager:
             "wallets": EmbeddedCollection("wallets", db_dir / "wallets.json"),
             "flags": EmbeddedCollection("flags", db_dir / "flags.json"),
             "graph_edges": EmbeddedCollection("graph_edges", db_dir / "graph_edges.json"),
-            "clusters": EmbeddedCollection("clusters", db_dir / "clusters.json")
+            "clusters": EmbeddedCollection("clusters", db_dir / "clusters.json"),
+            "uploads": EmbeddedCollection("uploads", db_dir / "uploads_history.json")
         }
 
     @property
@@ -206,6 +207,10 @@ class DatabaseManager:
     @property
     def clusters(self):
         return self.db["clusters"] if self.is_live_mongo else self.embedded_collections["clusters"]
+
+    @property
+    def uploads(self):
+        return self.db["uploads"] if self.is_live_mongo else self.embedded_collections["uploads"]
 
 
 db_manager = DatabaseManager()

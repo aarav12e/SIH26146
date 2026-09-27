@@ -1,0 +1,112 @@
+[
+  {
+    "upload_id": "up_1790491127",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T06:38:47.181467+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "872dfb56947f4d899aaa29cc67734d04"
+  },
+  {
+    "upload_id": "up_1790491177",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T06:39:37.337608+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "db97877bb28b421bbd06cc1ed609b22e"
+  },
+  {
+    "upload_id": "up_1790491332",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T06:42:12.434024+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "17906eadfa894d2497b71f1d30bb2bf1"
+  },
+  {
+    "upload_id": "up_1790491574",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T06:46:14.393515+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "36161f6afefc4cf9b7c727f9a572b470"
+  },
+  {
+    "upload_id": "up_1790492274",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T06:57:54.982817+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "afb48d6f46564475ac3a668a0421fa99"
+  },
+  {
+    "upload_id": "up_1790493141",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T07:12:21.182420+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "00f593088f5d44d89d3659c2f57b921b"
+  },
+  {
+    "upload_id": "up_1790493482",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T07:18:02.462413+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "c5e406e7e3bc4b44b3518e512d7d6a15"
+  },
+  {
+    "upload_id": "up_1790494731",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T07:38:51.717868+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "0f70807dc8104ba0b07673201f204ab3"
+  },
+  {
+    "upload_id": "up_1790495008",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T07:43:28.466518+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "bcf5d0a4bd3b4f2094b39aa5fd67ba16"
+  },
+  {
+    "upload_id": "up_1790495139",
+    "filename": "synthetic_bitcoin_traffic.csv",
+    "saved_file_path": "/Users/aarav/Desktop/Project/SIH26146/data/uploads/synthetic_bitcoin_traffic.csv",
+    "database_storage_path": "/Users/aarav/Desktop/Project/SIH26146/data/embedded_db/transactions.json",
+    "uploaded_at": "2026-09-27T07:45:39.219834+00:00",
+    "file_size_bytes": 11963,
+    "records_ingested": 65,
+    "status": "active",
+    "_id": "e2634d1161d549b08a5357d9a094bd78"
+  }
+]

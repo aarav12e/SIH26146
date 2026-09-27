@@ -22,13 +22,18 @@ FEATURE_KEYS = [
     "betweenness_centrality"
 ]
 
-def run_anomaly_detection() -> Dict[str, float]:
+def run_anomaly_detection(wallets_filter: Optional[List[str]] = None) -> Dict[str, float]:
     """
     NTRO §6.3: Unsupervised Anomaly Detection using Isolation Forest.
     Fits IsolationForest on StandardScaler-normalized feature matrix.
     Computes anomaly_score in [0.0, 1.0] per wallet (higher = more anomalous).
     """
-    wallets = list(db_manager.wallets.find())
+    if wallets_filter:
+        filter_set = set(wallets_filter)
+        wallets = [w for w in db_manager.wallets.find() if (w.get("wallet_address") or w.get("_id")) in filter_set]
+    else:
+        wallets = list(db_manager.wallets.find())
+
     if not wallets:
         logger.warning("No wallets to run anomaly detection.")
         return {}

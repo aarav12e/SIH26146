@@ -196,15 +196,24 @@ export default function FlagsTable({
                     style={{ cursor: 'pointer' }}
                   >
                     {/* Rank */}
-                    <td style={{ textAlign: 'center', fontWeight: 700, color: idx < 3 ? '#ef4444' : 'var(--text-dim)' }}>
+                    <td style={{ textAlign: 'center', fontWeight: 800, color: idx < 3 ? '#dc2626' : '#64748b' }}>
                       #{idx + 1}
                     </td>
 
                     {/* Target Wallet Entity */}
                     <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <span className="mono" style={{ fontWeight: 600, fontSize: '0.8125rem', color: isCriticalRisk ? '#fca5a5' : '#ffffff' }}>
-                          {wid ? `${wid.slice(0, 8)}...${wid.slice(-6)}` : 'Unknown'}
+                        <span className="mono" style={{ 
+                          fontWeight: 700, 
+                          fontSize: '0.82rem', 
+                          color: isCriticalRisk ? '#b91c1c' : '#0f172a',
+                          background: isCriticalRisk ? '#fef2f2' : '#f8fafc',
+                          padding: '2px 7px',
+                          borderRadius: '5px',
+                          border: `1px solid ${isCriticalRisk ? '#fecaca' : '#e2e8f0'}`,
+                          display: 'inline-block'
+                        }}>
+                          {wid && wid.length > 20 ? `${wid.slice(0, 8)}...${wid.slice(-6)}` : (wid || 'Unknown')}
                         </span>
                         <button
                           onClick={(e) => handleCopy(wid, e)}
@@ -215,7 +224,7 @@ export default function FlagsTable({
                         </button>
                       </div>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '4px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '5px' }}>
                         {flag.is_peel && (
                           <span className="badge badge-amber" style={{ fontSize: '0.62rem' }}>
                             <Repeat size={9} /> Peeling Chain
@@ -242,7 +251,7 @@ export default function FlagsTable({
                               width: `${Math.min(100, Math.round(riskScore * 100))}%`,
                               background: isCriticalRisk 
                                 ? 'linear-gradient(90deg, #f59e0b, #ef4444)' 
-                                : 'linear-gradient(90deg, #38bdf8, #f59e0b)'
+                                : 'linear-gradient(90deg, #3b82f6, #f59e0b)'
                             }}
                           />
                         </div>
@@ -266,9 +275,10 @@ export default function FlagsTable({
                     {/* Forensic Reasoning */}
                     <td>
                       <div style={{ 
-                        fontSize: '0.8rem', 
-                        color: 'var(--text-main)', 
-                        lineHeight: 1.4,
+                        fontSize: '0.8125rem', 
+                        color: '#1e293b', 
+                        fontWeight: 500,
+                        lineHeight: 1.45,
                         display: '-webkit-box',
                         WebkitLineClamp: 2,
                         WebkitBoxOrient: 'vertical',
@@ -277,7 +287,7 @@ export default function FlagsTable({
                         {topReason}
                       </div>
                       {flag.reasons && flag.reasons.length > 1 && (
-                        <div style={{ fontSize: '0.7rem', color: '#38bdf8', marginTop: '3px', fontWeight: 600 }}>
+                        <div style={{ fontSize: '0.72rem', color: '#2563eb', marginTop: '4px', fontWeight: 600 }}>
                           +{flag.reasons.length - 1} corroborated forensic signals
                         </div>
                       )}
@@ -305,7 +315,7 @@ export default function FlagsTable({
                           className="btn btn-secondary btn-xs"
                           title="Trace and visualize in Link Graph"
                         >
-                          <Share2 size={12} color="#38bdf8" />
+                          <Share2 size={12} color="#2563eb" />
                           <span>Trace</span>
                         </button>
                       </div>

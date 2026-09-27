@@ -11,7 +11,7 @@ import {
   Cpu
 } from 'lucide-react';
 
-export default function MetricsOverview({ stats }) {
+export default function MetricsOverview({ stats, onNavigateTab }) {
   const data = stats || {
     transactions_count: 65,
     wallets_count: 101,
@@ -36,6 +36,7 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--color-info-border)',
       icon: Activity,
       accentColor: 'var(--color-info)',
+      targetTab: 'transactions'
     },
     {
       id: 'wallets',
@@ -49,6 +50,7 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--brand-border)',
       icon: Wallet,
       accentColor: 'var(--brand)',
+      targetTab: 'graph'
     },
     {
       id: 'flags',
@@ -62,7 +64,8 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--color-danger-border)',
       icon: ShieldAlert,
       accentColor: 'var(--color-danger)',
-      isAlert: true
+      isAlert: true,
+      targetTab: 'flags'
     },
     {
       id: 'peels',
@@ -76,6 +79,7 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--color-warning-border)',
       icon: Repeat,
       accentColor: 'var(--color-warning)',
+      targetTab: 'flags'
     },
     {
       id: 'clusters',
@@ -89,6 +93,7 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--color-purple-border)',
       icon: Layers,
       accentColor: 'var(--color-purple)',
+      targetTab: 'clusters'
     },
     {
       id: 'coinjoin',
@@ -102,6 +107,7 @@ export default function MetricsOverview({ stats }) {
       badgeBorder: 'var(--color-cyan-border)',
       icon: GitFork,
       accentColor: 'var(--color-cyan)',
+      targetTab: 'flags'
     },
   ];
 
@@ -117,6 +123,7 @@ export default function MetricsOverview({ stats }) {
         return (
           <div
             key={c.id}
+            onClick={() => onNavigateTab && c.targetTab && onNavigateTab(c.targetTab)}
             style={{
               background: 'var(--white)',
               border: c.isAlert ? '1px solid var(--color-danger-border)' : '1px solid var(--border-subtle)',
@@ -124,7 +131,7 @@ export default function MetricsOverview({ stats }) {
               padding: '16px 18px',
               boxShadow: 'var(--shadow-xs)',
               transition: 'all 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
-              cursor: 'default',
+              cursor: onNavigateTab ? 'pointer' : 'default',
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',

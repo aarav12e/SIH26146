@@ -79,7 +79,8 @@ export default function EvidencePanel({
   return (
     <div className="card" style={{
       width: '440px',
-      maxHeight: 'calc(100vh - 120px)',
+      maxHeight: 'calc(100vh - 90px)',
+      height: '100%',
       overflowY: 'auto',
       padding: '20px',
       borderLeft: '3px solid var(--brand)',
@@ -105,7 +106,7 @@ export default function EvidencePanel({
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span className="mono" style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)' }}>
-              {entityId ? `${entityId.slice(0, 10)}...${entityId.slice(-8)}` : 'Unknown'}
+              {entityId && entityId.length > 22 ? `${entityId.slice(0, 10)}...${entityId.slice(-6)}` : (entityId || 'Unknown')}
             </span>
             <button onClick={handleCopy} className="copy-btn" title="Copy entity ID">
               {copied ? <Check size={13} color="#10b981" /> : <Copy size={13} />}

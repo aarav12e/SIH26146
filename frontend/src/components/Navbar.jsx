@@ -12,7 +12,10 @@ import {
   AlertCircle,
   Info,
   Zap,
-  ChevronDown
+  ChevronDown,
+  LogOut,
+  User,
+  Lock
 } from 'lucide-react';
 
 export default function Navbar({ 
@@ -22,7 +25,10 @@ export default function Navbar({
   backendStatus, 
   onQuickSeed, 
   seeding,
-  stats
+  stats,
+  currentUser,
+  onLogout,
+  onShowLogin
 }) {
   const [showStatusHelp, setShowStatusHelp] = useState(false);
   const isLive = backendStatus?.isLive;
@@ -67,7 +73,6 @@ export default function Navbar({
               <span style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
                 NTRO Bitcoin Intelligence
               </span>
-              <span className="badge badge-indigo" style={{ fontSize: '0.58rem', padding: '1px 6px' }}>SIH-26146</span>
             </div>
           </div>
 
@@ -160,6 +165,67 @@ export default function Navbar({
             <RotateCcw size={12} />
             <span>Reset</span>
           </button>
+
+          {/* Authenticated Investigator Profile & Sign Out or Officer Login */}
+          {currentUser ? (
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '10px', 
+              paddingLeft: '10px', 
+              marginLeft: '4px',
+              borderLeft: '1.5px solid var(--border-subtle)' 
+            }}>
+              <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '0.74rem', fontWeight: 800, color: 'var(--text-primary)', lineHeight: 1.2 }}>
+                  {currentUser.name}
+                </span>
+                <span style={{ fontSize: '0.62rem', color: 'var(--brand)', fontFamily: 'var(--font-mono, monospace)', fontWeight: 600, lineHeight: 1.2 }}>
+                  {currentUser.id}
+                </span>
+              </div>
+
+              {onLogout && (
+                <button
+                  id="btn-signout"
+                  onClick={onLogout}
+                  className="btn btn-secondary btn-sm"
+                  style={{ 
+                    borderColor: 'var(--color-danger-border)',
+                    color: 'var(--color-danger)', 
+                    background: 'var(--color-danger-surface)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    fontWeight: 700,
+                    padding: '4px 10px'
+                  }}
+                  title="Sign Out & Lock Intelligence Terminal"
+                >
+                  <LogOut size={13} color="var(--color-danger)" />
+                  <span>Log Out</span>
+                </button>
+              )}
+            </div>
+          ) : (
+            <div style={{ paddingLeft: '8px', marginLeft: '4px', borderLeft: '1.5px solid var(--border-subtle)' }}>
+              <button
+                id="btn-signin"
+                onClick={onShowLogin}
+                className="btn btn-primary btn-sm"
+                style={{ 
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontWeight: 700,
+                  padding: '5px 12px'
+                }}
+              >
+                <Lock size={13} />
+                <span>Officer Login</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </header>

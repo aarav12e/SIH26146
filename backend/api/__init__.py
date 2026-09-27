@@ -6,6 +6,7 @@ from backend.api.clusters import router as clusters_router
 from backend.api.graph import router as graph_router
 from backend.api.analyze import router as analyze_router
 from backend.api.stats import router as stats_router
+from backend.api.ai import router as ai_router
 
 api_router = APIRouter()
 api_router.include_router(ingest_router, tags=["Ingestion"])
@@ -15,5 +16,6 @@ api_router.include_router(clusters_router, tags=["Clusters"])
 api_router.include_router(graph_router, tags=["Graph"])
 api_router.include_router(analyze_router, tags=["Analysis"])
 api_router.include_router(stats_router, tags=["Stats & Transactions"])
+api_router.include_router(ai_router, tags=["AI Intelligence (Gemini)"])
 
 __all__ = ["api_router"]

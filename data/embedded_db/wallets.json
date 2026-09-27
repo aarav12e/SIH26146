@@ -1,0 +1,2932 @@
+[
+  {
+    "wallet_address": "bc1q_norm_0001",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 2.0,
+      "fan_ratio": 1.0,
+      "velocity": 3.0,
+      "amount_mean": 1.0435,
+      "amount_variance": 0.5983,
+      "amount_sum": 4.1742,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.00807
+    },
+    "associated_ips": [
+      "89.208.29.50",
+      "115.112.45.12"
+    ],
+    "associated_asns": [
+      "AS24940",
+      "AS4755"
+    ],
+    "_id": "bc1q_norm_0001",
+    "entity_id": "1",
+    "embedding_neighbors": [
+      "bc1q_norm_0004",
+      "bc1q_norm_0010"
+    ],
+    "anomaly_score": 0.454,
+    "risk_score": 0.161
+  },
+  {
+    "wallet_address": "bc1q_norm_0010",
+    "features": {
+      "fan_in": 4.0,
+      "fan_out": 1.0,
+      "fan_ratio": 0.25,
+      "velocity": 3.75,
+      "amount_mean": 1.4486,
+      "amount_variance": 0.5826,
+      "amount_sum": 7.243,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.02747,
+      "betweenness_centrality": 0.00847
+    },
+    "associated_ips": [
+      "89.208.29.50"
+    ],
+    "associated_asns": [
+      "AS24940"
+    ],
+    "_id": "bc1q_norm_0010",
+    "entity_id": "2",
+    "embedding_neighbors": [
+      "bc1q_norm_0003"
+    ],
+    "anomaly_score": 0.654,
+    "risk_score": 0.231,
+    "is_flagged": true
+  },
+  {
+    "wallet_address": "bc1q_norm_0019",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 0.2077,
+      "amount_variance": 0.0144,
+      "amount_sum": 0.4154,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00123
+    },
+    "associated_ips": [
+      "115.112.45.12"
+    ],
+    "associated_asns": [
+      "AS4755"
+    ],
+    "_id": "bc1q_norm_0019",
+    "entity_id": "3",
+    "embedding_neighbors": [
+      "bc1q_norm_0014"
+    ],
+    "anomaly_score": 0.187,
+    "risk_score": 0.066
+  },
+  {
+    "wallet_address": "bc1q_norm_0014",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 1.0,
+      "fan_ratio": 0.5,
+      "velocity": 2.25,
+      "amount_mean": 0.8773,
+      "amount_variance": 0.4096,
+      "amount_sum": 2.6318,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01648,
+      "betweenness_centrality": 0.00237
+    },
+    "associated_ips": [
+      "115.112.45.12"
+    ],
+    "associated_asns": [
+      "AS4755"
+    ],
+    "_id": "bc1q_norm_0014",
+    "entity_id": "4",
+    "embedding_neighbors": [
+      "bc1q_norm_0016"
+    ],
+    "anomaly_score": 0.351,
+    "risk_score": 0.125
+  },
+  {
+    "wallet_address": "bc1q_norm_0018",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 1.4617,
+      "amount_variance": 0.1805,
+      "amount_sum": 2.9234,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00209
+    },
+    "associated_ips": [
+      "103.251.167.88"
+    ],
+    "associated_asns": [
+      "AS133982"
+    ],
+    "_id": "bc1q_norm_0018",
+    "entity_id": "5",
+    "embedding_neighbors": [
+      "bc1q_norm_0007"
+    ],
+    "anomaly_score": 0.253,
+    "risk_score": 0.093
+  },
+  {
+    "wallet_address": "bc1q_norm_0007",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 1.0077,
+      "amount_variance": 0.0008,
+      "amount_sum": 2.0154,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00091
+    },
+    "associated_ips": [
+      "103.251.167.88",
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS133982",
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0007",
+    "entity_id": "6",
+    "embedding_neighbors": [
+      "bc1q_norm_0022"
+    ],
+    "anomaly_score": 0.176,
+    "risk_score": 0.065
+  },
+  {
+    "wallet_address": "bc1q_norm_0006",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 4.0,
+      "fan_ratio": 4.0,
+      "velocity": 3.0,
+      "amount_mean": 0.7951,
+      "amount_variance": 0.0646,
+      "amount_sum": 3.1803,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "51.15.10.22",
+      "34.120.55.91"
+    ],
+    "associated_asns": [
+      "AS12876",
+      "AS15169"
+    ],
+    "_id": "bc1q_norm_0006",
+    "entity_id": "7",
+    "embedding_neighbors": [
+      "bc1q_norm_0024",
+      "bc1q_norm_0013",
+      "bc1q_norm_0010",
+      "bc1q_norm_0015"
+    ],
+    "anomaly_score": 0.561,
+    "risk_score": 0.196
+  },
+  {
+    "wallet_address": "bc1q_norm_0024",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 2.0,
+      "fan_ratio": 1.0,
+      "velocity": 3.0,
+      "amount_mean": 0.5833,
+      "amount_variance": 0.035,
+      "amount_sum": 2.3333,
+      "round_number_freq": 0.0,
+      "ip_diversity": 3.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.00328
+    },
+    "associated_ips": [
+      "51.15.10.22",
+      "103.251.167.88",
+      "115.112.45.12"
+    ],
+    "associated_asns": [
+      "AS12876",
+      "AS133982",
+      "AS4755"
+    ],
+    "_id": "bc1q_norm_0024",
+    "entity_id": "8",
+    "embedding_neighbors": [
+      "bc1q_norm_0015",
+      "bc1q_norm_0011"
+    ],
+    "anomaly_score": 0.438,
+    "risk_score": 0.154
+  },
+  {
+    "wallet_address": "bc1q_norm_0003",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 2.0,
+      "fan_ratio": 2.0,
+      "velocity": 2.25,
+      "amount_mean": 1.1141,
+      "amount_variance": 0.5634,
+      "amount_sum": 3.3422,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01648,
+      "betweenness_centrality": 0.00709
+    },
+    "associated_ips": [
+      "115.112.45.12",
+      "89.208.29.50"
+    ],
+    "associated_asns": [
+      "AS4755",
+      "AS24940"
+    ],
+    "_id": "bc1q_norm_0003",
+    "entity_id": "9",
+    "embedding_neighbors": [
+      "bc1q_norm_0019",
+      "bc1q_norm_0014"
+    ],
+    "anomaly_score": 0.41,
+    "risk_score": 0.145
+  },
+  {
+    "wallet_address": "bc1q_norm_0015",
+    "features": {
+      "fan_in": 3.0,
+      "fan_out": 1.0,
+      "fan_ratio": 0.333,
+      "velocity": 3.0,
+      "amount_mean": 1.1288,
+      "amount_variance": 0.6203,
+      "amount_sum": 4.5152,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.00628
+    },
+    "associated_ips": [
+      "103.251.167.88",
+      "34.120.55.91"
+    ],
+    "associated_asns": [
+      "AS133982",
+      "AS15169"
+    ],
+    "_id": "bc1q_norm_0015",
+    "entity_id": "10",
+    "embedding_neighbors": [
+      "bc1q_norm_0001"
+    ],
+    "anomaly_score": 0.447,
+    "risk_score": 0.158
+  },
+  {
+    "wallet_address": "bc1q_norm_0021",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 3.0,
+      "fan_ratio": 3.0,
+      "velocity": 3.0,
+      "amount_mean": 1.4581,
+      "amount_variance": 0.4117,
+      "amount_sum": 5.8324,
+      "round_number_freq": 0.25,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.00726
+    },
+    "associated_ips": [
+      "34.120.55.91",
+      "103.251.167.88"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS133982"
+    ],
+    "_id": "bc1q_norm_0021",
+    "entity_id": "11",
+    "embedding_neighbors": [
+      "bc1q_norm_0020",
+      "bc1q_norm_0010",
+      "bc1q_norm_0024"
+    ],
+    "anomaly_score": 0.592,
+    "risk_score": 0.208
+  },
+  {
+    "wallet_address": "bc1q_norm_0020",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 3.0,
+      "fan_ratio": 3.0,
+      "velocity": 3.0,
+      "amount_mean": 0.8568,
+      "amount_variance": 0.3029,
+      "amount_sum": 3.4271,
+      "round_number_freq": 0.0,
+      "ip_diversity": 4.0,
+      "degree_centrality": 0.02198,
+      "betweenness_centrality": 0.00354
+    },
+    "associated_ips": [
+      "34.120.55.91",
+      "89.208.29.50",
+      "103.251.167.88",
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS24940",
+      "AS133982",
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0020",
+    "entity_id": "12",
+    "embedding_neighbors": [
+      "bc1q_norm_0015",
+      "bc1q_norm_0022",
+      "bc1q_norm_0011"
+    ],
+    "anomaly_score": 0.533,
+    "risk_score": 0.187
+  },
+  {
+    "wallet_address": "bc1q_norm_0013",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 0.5932,
+      "amount_variance": 0.0046,
+      "amount_sum": 1.1863,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00067
+    },
+    "associated_ips": [
+      "34.120.55.91",
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0013",
+    "entity_id": "13",
+    "embedding_neighbors": [
+      "bc1q_norm_0001"
+    ],
+    "anomaly_score": 0.189,
+    "risk_score": 0.066
+  },
+  {
+    "wallet_address": "bc1q_norm_0022",
+    "features": {
+      "fan_in": 4.0,
+      "fan_out": 1.0,
+      "fan_ratio": 0.25,
+      "velocity": 3.75,
+      "amount_mean": 1.635,
+      "amount_variance": 0.1729,
+      "amount_sum": 8.1752,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.02747,
+      "betweenness_centrality": 0.00322
+    },
+    "associated_ips": [
+      "89.208.29.50",
+      "34.120.55.91"
+    ],
+    "associated_asns": [
+      "AS24940",
+      "AS15169"
+    ],
+    "_id": "bc1q_norm_0022",
+    "entity_id": "14",
+    "embedding_neighbors": [
+      "bc1q_norm_0018"
+    ],
+    "anomaly_score": 0.564,
+    "risk_score": 0.202
+  },
+  {
+    "wallet_address": "bc1q_norm_0008",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 3.0,
+      "fan_ratio": 1.5,
+      "velocity": 3.75,
+      "amount_mean": 1.3048,
+      "amount_variance": 0.3236,
+      "amount_sum": 6.5238,
+      "round_number_freq": 0.0,
+      "ip_diversity": 3.0,
+      "degree_centrality": 0.02747,
+      "betweenness_centrality": 0.00556
+    },
+    "associated_ips": [
+      "34.120.55.91",
+      "89.208.29.50",
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS24940",
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0008",
+    "entity_id": "15",
+    "embedding_neighbors": [
+      "bc1q_norm_0002",
+      "bc1q_norm_0017"
+    ],
+    "anomaly_score": 0.538,
+    "risk_score": 0.189
+  },
+  {
+    "wallet_address": "bc1q_norm_0002",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 1.0,
+      "fan_ratio": 0.5,
+      "velocity": 2.25,
+      "amount_mean": 1.732,
+      "amount_variance": 0.2756,
+      "amount_sum": 5.196,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01648,
+      "betweenness_centrality": 0.00168
+    },
+    "associated_ips": [
+      "34.120.55.91",
+      "103.251.167.88"
+    ],
+    "associated_asns": [
+      "AS15169",
+      "AS133982"
+    ],
+    "_id": "bc1q_norm_0002",
+    "entity_id": "16",
+    "embedding_neighbors": [
+      "bc1q_norm_0022"
+    ],
+    "anomaly_score": 0.331,
+    "risk_score": 0.117
+  },
+  {
+    "wallet_address": "bc1q_norm_0005",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 2.0,
+      "fan_ratio": 2.0,
+      "velocity": 1.5,
+      "amount_mean": 1.6359,
+      "amount_variance": 0.0949,
+      "amount_sum": 3.2718,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "103.251.167.88",
+      "89.208.29.50"
+    ],
+    "associated_asns": [
+      "AS133982",
+      "AS24940"
+    ],
+    "_id": "bc1q_norm_0005",
+    "entity_id": "17",
+    "embedding_neighbors": [
+      "bc1q_norm_0009",
+      "bc1q_norm_0022"
+    ],
+    "anomaly_score": 0.367,
+    "risk_score": 0.128
+  },
+  {
+    "wallet_address": "bc1q_norm_0009",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 1.5,
+      "amount_mean": 0.7492,
+      "amount_variance": 0.3344,
+      "amount_sum": 1.4983,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "103.251.167.88"
+    ],
+    "associated_asns": [
+      "AS133982"
+    ],
+    "_id": "bc1q_norm_0009",
+    "entity_id": "18",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.367,
+    "risk_score": 0.13
+  },
+  {
+    "wallet_address": "bc1q_norm_0012",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.2558,
+      "amount_variance": 0.0,
+      "amount_sum": 1.2558,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "89.208.29.50"
+    ],
+    "associated_asns": [
+      "AS24940"
+    ],
+    "_id": "bc1q_norm_0012",
+    "entity_id": "19",
+    "embedding_neighbors": [
+      "bc1q_norm_0008"
+    ],
+    "anomaly_score": 0.139,
+    "risk_score": 0.049
+  },
+  {
+    "wallet_address": "bc1q_norm_0011",
+    "features": {
+      "fan_in": 2.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 1.5,
+      "amount_mean": 0.3415,
+      "amount_variance": 0.0779,
+      "amount_sum": 0.6829,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0011",
+    "entity_id": "20",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.322,
+    "risk_score": 0.114
+  },
+  {
+    "wallet_address": "bc1q_norm_0017",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 2.0,
+      "fan_ratio": 2.0,
+      "velocity": 2.25,
+      "amount_mean": 1.4955,
+      "amount_variance": 0.6033,
+      "amount_sum": 4.4865,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01648,
+      "betweenness_centrality": 0.0061
+    },
+    "associated_ips": [
+      "51.15.10.22",
+      "34.120.55.91"
+    ],
+    "associated_asns": [
+      "AS12876",
+      "AS15169"
+    ],
+    "_id": "bc1q_norm_0017",
+    "entity_id": "21",
+    "embedding_neighbors": [
+      "bc1q_norm_0008",
+      "bc1q_norm_0021"
+    ],
+    "anomaly_score": 0.407,
+    "risk_score": 0.143
+  },
+  {
+    "wallet_address": "bc1q_norm_0023",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 2.4386,
+      "amount_variance": 0.0,
+      "amount_sum": 2.4386,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "51.15.10.22"
+    ],
+    "associated_asns": [
+      "AS12876"
+    ],
+    "_id": "bc1q_norm_0023",
+    "entity_id": "22",
+    "embedding_neighbors": [
+      "bc1q_norm_0010"
+    ],
+    "anomaly_score": 0.208,
+    "risk_score": 0.073
+  },
+  {
+    "wallet_address": "bc1q_norm_0004",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 0.3717,
+      "amount_variance": 0.0403,
+      "amount_sum": 0.7435,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00167
+    },
+    "associated_ips": [
+      "89.208.29.50"
+    ],
+    "associated_asns": [
+      "AS24940"
+    ],
+    "_id": "bc1q_norm_0004",
+    "entity_id": "23",
+    "embedding_neighbors": [
+      "bc1q_norm_0009"
+    ],
+    "anomaly_score": 0.204,
+    "risk_score": 0.072
+  },
+  {
+    "wallet_address": "bc1q_norm_0016",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.6546,
+      "amount_variance": 0.0,
+      "amount_sum": 1.6546,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "115.112.45.12"
+    ],
+    "associated_asns": [
+      "AS4755"
+    ],
+    "_id": "bc1q_norm_0016",
+    "entity_id": "24",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.118,
+    "risk_score": 0.043
+  },
+  {
+    "wallet_address": "bc1q_peel_master_darknet",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 48.5,
+      "amount_variance": 0.0,
+      "amount_sum": 48.5,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.44"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_master_darknet",
+    "entity_id": "25",
+    "embedding_neighbors": [
+      "bc1q_peel_sink_000",
+      "bc1q_peel_chg_000"
+    ],
+    "anomaly_score": 0.756,
+    "risk_score": 0.643,
+    "is_flagged": true
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_000",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.1345,
+      "amount_variance": 0.0,
+      "amount_sum": 3.1345,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.44"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_sink_000",
+    "entity_id": "26",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.091,
+    "risk_score": 0.05
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_000",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 45.3651,
+      "amount_variance": 0.0,
+      "amount_sum": 90.7302,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00155
+    },
+    "associated_ips": [
+      "185.220.100.44",
+      "185.220.100.89"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_chg_000",
+    "entity_id": "27",
+    "embedding_neighbors": [
+      "bc1q_peel_sink_001",
+      "bc1q_peel_chg_001"
+    ],
+    "anomaly_score": 0.477,
+    "risk_score": 0.423
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_001",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.4928,
+      "amount_variance": 0.0,
+      "amount_sum": 3.4928,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.89"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_sink_001",
+    "entity_id": "28",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.098,
+    "risk_score": 0.049
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_001",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 41.8719,
+      "amount_variance": 0.0,
+      "amount_sum": 83.7438,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00264
+    },
+    "associated_ips": [
+      "185.220.100.89",
+      "185.193.88.12"
+    ],
+    "associated_asns": [
+      "AS208323",
+      "AS48282"
+    ],
+    "_id": "bc1q_peel_chg_001",
+    "entity_id": "29",
+    "embedding_neighbors": [
+      "bc1q_peel_chg_002",
+      "bc1q_peel_sink_002"
+    ],
+    "anomaly_score": 0.408,
+    "risk_score": 0.314
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_002",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 2.7848,
+      "amount_variance": 0.0,
+      "amount_sum": 2.7848,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.12"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_peel_sink_002",
+    "entity_id": "30",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.094,
+    "risk_score": 0.041
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_002",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 39.0867,
+      "amount_variance": 0.0,
+      "amount_sum": 78.1734,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00328
+    },
+    "associated_ips": [
+      "185.193.88.12",
+      "198.51.100.90"
+    ],
+    "associated_asns": [
+      "AS48282",
+      "AS52468"
+    ],
+    "_id": "bc1q_peel_chg_002",
+    "entity_id": "31",
+    "embedding_neighbors": [
+      "bc1q_peel_sink_003",
+      "bc1q_peel_chg_003"
+    ],
+    "anomaly_score": 0.37,
+    "risk_score": 0.245
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_003",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.3688,
+      "amount_variance": 0.0,
+      "amount_sum": 3.3688,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "198.51.100.90"
+    ],
+    "associated_asns": [
+      "AS52468"
+    ],
+    "_id": "bc1q_peel_sink_003",
+    "entity_id": "32",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.093,
+    "risk_score": 0.04
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_003",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 35.7175,
+      "amount_variance": 0.0,
+      "amount_sum": 71.435,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00346
+    },
+    "associated_ips": [
+      "198.51.100.90",
+      "185.220.100.44"
+    ],
+    "associated_asns": [
+      "AS52468",
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_chg_003",
+    "entity_id": "33",
+    "embedding_neighbors": [
+      "bc1q_peel_sink_004",
+      "bc1q_peel_chg_004"
+    ],
+    "anomaly_score": 0.343,
+    "risk_score": 0.197
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_004",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.622,
+      "amount_variance": 0.0,
+      "amount_sum": 3.622,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.44"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_sink_004",
+    "entity_id": "34",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.102,
+    "risk_score": 0.041
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_004",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 32.0951,
+      "amount_variance": 0.0,
+      "amount_sum": 64.1902,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00328
+    },
+    "associated_ips": [
+      "185.220.100.44",
+      "185.220.100.89"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_chg_004",
+    "entity_id": "35",
+    "embedding_neighbors": [
+      "bc1q_peel_chg_005",
+      "bc1q_peel_sink_005"
+    ],
+    "anomaly_score": 0.335,
+    "risk_score": 0.168
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_005",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.3763,
+      "amount_variance": 0.0,
+      "amount_sum": 3.3763,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.89"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_peel_sink_005",
+    "entity_id": "36",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.093,
+    "risk_score": 0.036
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_005",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 28.7184,
+      "amount_variance": 0.0,
+      "amount_sum": 57.4368,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00264
+    },
+    "associated_ips": [
+      "185.220.100.89",
+      "185.193.88.12"
+    ],
+    "associated_asns": [
+      "AS208323",
+      "AS48282"
+    ],
+    "_id": "bc1q_peel_chg_005",
+    "entity_id": "37",
+    "embedding_neighbors": [
+      "bc1q_peel_chg_006",
+      "bc1q_peel_sink_006"
+    ],
+    "anomaly_score": 0.324,
+    "risk_score": 0.146
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_006",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 2.7361,
+      "amount_variance": 0.0,
+      "amount_sum": 2.7361,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.12"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_peel_sink_006",
+    "entity_id": "38",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.096,
+    "risk_score": 0.036
+  },
+  {
+    "wallet_address": "bc1q_peel_chg_006",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 1.5,
+      "amount_mean": 25.9819,
+      "amount_variance": 0.0,
+      "amount_sum": 51.9638,
+      "round_number_freq": 0.0,
+      "ip_diversity": 2.0,
+      "degree_centrality": 0.01099,
+      "betweenness_centrality": 0.00155
+    },
+    "associated_ips": [
+      "185.193.88.12",
+      "198.51.100.90"
+    ],
+    "associated_asns": [
+      "AS48282",
+      "AS52468"
+    ],
+    "_id": "bc1q_peel_chg_006",
+    "entity_id": "39",
+    "embedding_neighbors": [
+      "bc1q_mixer_input_001",
+      "bc1q_peel_sink_007"
+    ],
+    "anomaly_score": 0.332,
+    "risk_score": 0.138
+  },
+  {
+    "wallet_address": "bc1q_peel_sink_007",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 3.777,
+      "amount_variance": 0.0,
+      "amount_sum": 3.777,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "198.51.100.90"
+    ],
+    "associated_asns": [
+      "AS52468"
+    ],
+    "_id": "bc1q_peel_sink_007",
+    "entity_id": "40",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.111,
+    "risk_score": 0.041
+  },
+  {
+    "wallet_address": "bc1q_mixer_input_001",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 22.2045,
+      "amount_variance": 0.0,
+      "amount_sum": 22.2045,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "198.51.100.90"
+    ],
+    "associated_asns": [
+      "AS52468"
+    ],
+    "_id": "bc1q_mixer_input_001",
+    "entity_id": "41",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.382,
+    "risk_score": 0.148
+  },
+  {
+    "wallet_address": "bc1q_mix_in_000",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_in_000",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_0_1",
+      "bc1q_mix_clean_0_2",
+      "bc1q_mix_clean_0_0"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mixer_layering_core",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 12.0,
+      "fan_ratio": 12.0,
+      "velocity": 9.0,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 18.0024,
+      "round_number_freq": 0.0,
+      "ip_diversity": 3.0,
+      "degree_centrality": 0.06593,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55",
+      "194.26.29.101",
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS48282",
+      "AS200000",
+      "AS49870"
+    ],
+    "_id": "bc1q_mixer_layering_core",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_5_2",
+      "bc1q_mix_clean_10_0",
+      "bc1q_mix_clean_3_0",
+      "bc1q_mix_clean_6_1",
+      "bc1q_mix_clean_5_1"
+    ],
+    "anomaly_score": 0.91,
+    "risk_score": 0.773,
+    "is_flagged": true
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_0_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_0_0",
+    "entity_id": "43",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_0_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_0_1",
+    "entity_id": "44",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_0_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_0_2",
+    "entity_id": "45",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_001",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_in_001",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_1_1",
+      "bc1q_mix_clean_1_2",
+      "bc1q_mix_clean_1_0"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_1_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_1_0",
+    "entity_id": "46",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_1_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_1_1",
+    "entity_id": "47",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_1_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_1_2",
+    "entity_id": "48",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_002",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_in_002",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_2_0",
+      "bc1q_mix_clean_2_2",
+      "bc1q_mix_clean_2_1"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_2_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_2_0",
+    "entity_id": "49",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_2_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_2_1",
+    "entity_id": "50",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_2_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_2_2",
+    "entity_id": "51",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_003",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_in_003",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_3_0",
+      "bc1q_mix_clean_3_1",
+      "bc1q_mix_clean_3_2"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_3_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_3_0",
+    "entity_id": "52",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_3_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_3_1",
+    "entity_id": "53",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_3_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_3_2",
+    "entity_id": "54",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_004",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_in_004",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_4_0",
+      "bc1q_mix_clean_4_1",
+      "bc1q_mix_clean_4_2"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_4_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_4_0",
+    "entity_id": "55",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_4_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_4_1",
+    "entity_id": "56",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_4_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_4_2",
+    "entity_id": "57",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_005",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_in_005",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_5_2",
+      "bc1q_mix_clean_5_1",
+      "bc1q_mix_clean_5_0"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_5_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_5_0",
+    "entity_id": "58",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_5_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_5_1",
+    "entity_id": "59",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_5_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_5_2",
+    "entity_id": "60",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_006",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_in_006",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_6_1",
+      "bc1q_mix_clean_6_0",
+      "bc1q_mix_clean_6_2"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_6_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_6_0",
+    "entity_id": "61",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_6_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_6_1",
+    "entity_id": "62",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_6_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_6_2",
+    "entity_id": "63",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_007",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_in_007",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_7_1",
+      "bc1q_mix_clean_7_2",
+      "bc1q_mix_clean_7_0"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_7_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_7_0",
+    "entity_id": "64",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_7_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_7_1",
+    "entity_id": "65",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_7_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_7_2",
+    "entity_id": "66",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_008",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_in_008",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_8_2",
+      "bc1q_mix_clean_8_0",
+      "bc1q_mix_clean_8_1"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_8_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_8_0",
+    "entity_id": "67",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_8_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_8_1",
+    "entity_id": "68",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_8_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_8_2",
+    "entity_id": "69",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_009",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_in_009",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_9_1",
+      "bc1q_mix_clean_9_2",
+      "bc1q_mix_clean_9_0"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_9_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_9_0",
+    "entity_id": "70",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_9_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_9_1",
+    "entity_id": "71",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_9_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.55"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_mix_clean_9_2",
+    "entity_id": "72",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_010",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_in_010",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_10_0",
+      "bc1q_mix_clean_10_2",
+      "bc1q_mix_clean_10_1"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_10_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_10_0",
+    "entity_id": "73",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_10_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_10_1",
+    "entity_id": "74",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_10_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "194.26.29.101"
+    ],
+    "associated_asns": [
+      "AS200000"
+    ],
+    "_id": "bc1q_mix_clean_10_2",
+    "entity_id": "75",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_in_011",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 1.0,
+      "fan_ratio": 1.0,
+      "velocity": 0.75,
+      "amount_mean": 1.5002,
+      "amount_variance": 0.0,
+      "amount_sum": 1.5002,
+      "round_number_freq": 0.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_in_011",
+    "entity_id": "42",
+    "embedding_neighbors": [
+      "bc1q_mix_clean_11_2",
+      "bc1q_mix_clean_11_0",
+      "bc1q_mix_clean_11_1"
+    ],
+    "anomaly_score": 0.074,
+    "risk_score": 0.026
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_11_0",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_11_0",
+    "entity_id": "76",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_11_1",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_11_1",
+    "entity_id": "77",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_mix_clean_11_2",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 1.0,
+      "amount_variance": 0.0,
+      "amount_sum": 1.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "141.98.34.12"
+    ],
+    "associated_asns": [
+      "AS49870"
+    ],
+    "_id": "bc1q_mix_clean_11_2",
+    "entity_id": "78",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.0,
+    "risk_score": 0.009
+  },
+  {
+    "wallet_address": "bc1q_smurf_structuring_ring",
+    "features": {
+      "fan_in": 0.0,
+      "fan_out": 10.0,
+      "fan_ratio": 10.0,
+      "velocity": 7.5,
+      "amount_mean": 9.9003,
+      "amount_variance": 50.29,
+      "amount_sum": 99.003,
+      "round_number_freq": 0.0,
+      "ip_diversity": 5.0,
+      "degree_centrality": 0.05495,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.12",
+      "198.51.100.33",
+      "45.154.255.88",
+      "193.32.160.10",
+      "185.193.88.99"
+    ],
+    "associated_asns": [
+      "AS208323",
+      "AS52468",
+      "AS58061",
+      "AS60117",
+      "AS48282"
+    ],
+    "_id": "bc1q_smurf_structuring_ring",
+    "entity_id": "79",
+    "embedding_neighbors": [
+      "bc1q_smurf_mule_05",
+      "bc1q_smurf_mule_08",
+      "bc1q_smurf_mule_04",
+      "bc1q_smurf_mule_06",
+      "bc1q_smurf_mule_02"
+    ],
+    "anomaly_score": 1.0,
+    "risk_score": 0.85,
+    "is_flagged": true
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_00",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 2.0,
+      "amount_variance": 0.0,
+      "amount_sum": 2.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.12"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_smurf_mule_00",
+    "entity_id": "80",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.138,
+    "risk_score": 0.056
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_01",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 20.0,
+      "amount_variance": 0.0,
+      "amount_sum": 20.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "198.51.100.33"
+    ],
+    "associated_asns": [
+      "AS52468"
+    ],
+    "_id": "bc1q_smurf_mule_01",
+    "entity_id": "81",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.361,
+    "risk_score": 0.2
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_02",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 20.0,
+      "amount_variance": 0.0,
+      "amount_sum": 20.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "45.154.255.88"
+    ],
+    "associated_asns": [
+      "AS58061"
+    ],
+    "_id": "bc1q_smurf_mule_02",
+    "entity_id": "82",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.361,
+    "risk_score": 0.2
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_03",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 5.0,
+      "amount_variance": 0.0,
+      "amount_sum": 5.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "193.32.160.10"
+    ],
+    "associated_asns": [
+      "AS60117"
+    ],
+    "_id": "bc1q_smurf_mule_03",
+    "entity_id": "83",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.174,
+    "risk_score": 0.079
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_04",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 5.0,
+      "amount_variance": 0.0,
+      "amount_sum": 5.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.99"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_smurf_mule_04",
+    "entity_id": "84",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.174,
+    "risk_score": 0.079
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_05",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 10.0,
+      "amount_variance": 0.0,
+      "amount_sum": 10.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.220.100.12"
+    ],
+    "associated_asns": [
+      "AS208323"
+    ],
+    "_id": "bc1q_smurf_mule_05",
+    "entity_id": "85",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.252,
+    "risk_score": 0.125
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_06",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 10.0,
+      "amount_variance": 0.0,
+      "amount_sum": 10.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "198.51.100.33"
+    ],
+    "associated_asns": [
+      "AS52468"
+    ],
+    "_id": "bc1q_smurf_mule_06",
+    "entity_id": "86",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.252,
+    "risk_score": 0.125
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_07",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 5.0,
+      "amount_variance": 0.0,
+      "amount_sum": 5.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "45.154.255.88"
+    ],
+    "associated_asns": [
+      "AS58061"
+    ],
+    "_id": "bc1q_smurf_mule_07",
+    "entity_id": "87",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.174,
+    "risk_score": 0.079
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_08",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 2.0,
+      "amount_variance": 0.0,
+      "amount_sum": 2.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "193.32.160.10"
+    ],
+    "associated_asns": [
+      "AS60117"
+    ],
+    "_id": "bc1q_smurf_mule_08",
+    "entity_id": "88",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.138,
+    "risk_score": 0.056
+  },
+  {
+    "wallet_address": "bc1q_smurf_mule_09",
+    "features": {
+      "fan_in": 1.0,
+      "fan_out": 0.0,
+      "fan_ratio": 0.0,
+      "velocity": 0.75,
+      "amount_mean": 20.0,
+      "amount_variance": 0.0,
+      "amount_sum": 20.0,
+      "round_number_freq": 1.0,
+      "ip_diversity": 1.0,
+      "degree_centrality": 0.00549,
+      "betweenness_centrality": 0.0
+    },
+    "associated_ips": [
+      "185.193.88.99"
+    ],
+    "associated_asns": [
+      "AS48282"
+    ],
+    "_id": "bc1q_smurf_mule_09",
+    "entity_id": "89",
+    "embedding_neighbors": [],
+    "anomaly_score": 0.361,
+    "risk_score": 0.2
+  }
+]

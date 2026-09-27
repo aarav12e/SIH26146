@@ -8,8 +8,18 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+        secure: false,
+        configure: (proxy, _options) => {
+          proxy.on('error', (err, _req, res) => {
+            // Gracefully handle ECONNREFUSED without spamming terminal stack traces
+            if (!res.headersSent && res.writeHead) {
+              res.writeHead(503, { 'Content-Type': 'application/json' });
+              res.end(JSON.stringify({ detail: 'Backend service offline on port 8000. Fallback data active.' }));
+            }
+          });
+        }
       }
     }
   }

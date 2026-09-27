@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { 
   FileText, 
   Search, 
-  ArrowRight, 
   ChevronLeft, 
   ChevronRight, 
   Repeat, 
-  Layers 
+  Copy,
+  Check,
+  Globe,
+  GitFork
 } from 'lucide-react';
 import { apiClient } from '../api/client';
 
@@ -16,6 +18,7 @@ export default function TransactionsLedger({ onSelectWallet }) {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
+  const [copiedId, setCopiedId] = useState(null);
 
   const fetchTxs = async (p = page, q = search) => {
     setLoading(true);
@@ -40,163 +43,218 @@ export default function TransactionsLedger({ onSelectWallet }) {
     fetchTxs(1, search);
   };
 
+  const handleCopy = (text, e) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(text);
+    setCopiedId(text);
+    setTimeout(() => setCopiedId(null), 1800);
+  };
+
   const totalPages = Math.ceil(total / 15) || 1;
 
   return (
-    <div className="glass-panel" style={{ padding: '24px' }}>
+    <div className="card" style={{ overflow: 'hidden' }}>
       
       {/* Header & Search */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', flexWrap: 'wrap', gap: '16px' }}>
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <FileText size={22} color="var(--accent-indigo)" />
-            <h2 style={{ fontSize: '1.2rem', fontWeight: 800 }}>Transactions Forensics Ledger</h2>
-          </div>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px' }}>
-            Correlated network-layer (IP/port) and blockchain-layer (TXID/addresses/amounts) telemetry with peeling-chain and CoinJoin detection (NTRO §6.4).
-          </p>
-        </div>
+      <div style={{ padding: '20px 24px', borderBottom: '1px solid var(--border-faint)' }}>
 
-        {/* Search */}
-        <form onSubmit={handleSearch} style={{ display: 'flex', gap: '8px' }}>
-          <div style={{ position: 'relative', width: '280px' }}>
-            <Search size={16} color="var(--text-dim)" style={{ position: 'absolute', left: '12px', top: '11px' }} />
-            <input
-              type="text"
-              placeholder="Search TXID, wallet, or IP..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="input-field"
-              style={{ paddingLeft: '36px' }}
-            />
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '16px' }}>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{
+              width: '38px', height: '38px',
+              borderRadius: 'var(--radius-md)',
+              background: 'var(--cyan-tint)',
+              border: '1px solid var(--cyan-border)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <FileText size={18} color="var(--color-cyan)" />
+            </div>
+            <div>
+              <h2 className="heading-md" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                Forensic Transactions Ledger
+                <span className="badge badge-cyan">{total} Transactions</span>
+              </h2>
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginTop: '2px' }}>
+                Network-layer &amp; blockchain telemetry with peeling-chain and CoinJoin detection.
+              </p>
+            </div>
           </div>
-          <button type="submit" className="btn btn-primary btn-sm">
-            Search
-          </button>
-        </form>
+
+          {/* Search box */}
+          <form onSubmit={handleSearch} style={{ display: 'flex', gap: '8px' }}>
+            <div style={{ position: 'relative', width: '280px' }}>
+              <Search size={14} color="var(--text-dim)" style={{ position: 'absolute', left: '11px', top: '10px' }} />
+              <input
+                type="text"
+                placeholder="Search TXID, wallet, IP, country..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="input-field"
+                style={{ paddingLeft: '32px' }}
+              />
+            </div>
+            <button type="submit" className="btn btn-secondary btn-sm">
+              Search
+            </button>
+          </form>
+
+        </div>
       </div>
 
-      {/* Table */}
-      <div style={{ overflowX: 'auto', maxHeight: '560px', overflowY: 'auto' }}>
+      {/* Table Container */}
+      <div className="forensics-table-container">
         <table className="forensics-table">
           <thead>
             <tr>
-              <th style={{ width: '180px' }}>TXID / Time</th>
-              <th>Inputs (Sender)</th>
-              <th style={{ width: '40px' }}></th>
-              <th>Outputs (Receiver)</th>
-              <th style={{ width: '130px' }}>Total Amount</th>
-              <th style={{ width: '150px' }}>Patterns</th>
-              <th style={{ width: '160px' }}>Network Origin</th>
+              <th style={{ width: '180px' }}>Transaction ID (TXID)</th>
+              <th style={{ width: '170px' }}>Origin IP & Geo</th>
+              <th style={{ width: '220px' }}>Inputs (Senders)</th>
+              <th style={{ width: '220px' }}>Outputs (Receivers)</th>
+              <th style={{ width: '120px' }}>Amounts (BTC)</th>
+              <th>Forensic Detections</th>
             </tr>
           </thead>
           <tbody>
             {transactions.length === 0 ? (
               <tr>
-                <td colSpan={7} style={{ textAlign: 'center', padding: '40px', color: 'var(--text-dim)' }}>
-                  {loading ? 'Loading transactions...' : 'No transactions found. Ingest dataset first.'}
+                <td colSpan={6} style={{ textAlign: 'center', padding: '40px', color: 'var(--text-secondary)' }}>
+                  No transactions found matching your criteria.
                 </td>
               </tr>
             ) : (
-              transactions.map((tx) => {
-                const inTotal = (tx.input_amounts || []).reduce((a, b) => a + b, 0);
-                const outTotal = (tx.output_amounts || []).reduce((a, b) => a + b, 0);
-                const txAmt = Math.max(inTotal, outTotal);
+              transactions.map((tx, idx) => {
+                const txid = String(tx.txid || tx._id || `tx_${idx}`);
                 const isPeel = tx.chain_flag?.is_peel;
-                const isMix = tx.mix_flag?.is_coinjoin_like;
+                const isCoinJoin = tx.mix_flag?.is_coinjoin_like;
+                const inSum = (tx.input_amounts || []).reduce((a, b) => a + Number(b || 0), 0);
+                const outSum = (tx.output_amounts || []).reduce((a, b) => a + Number(b || 0), 0);
+                const totalBtc = Math.max(inSum, outSum).toFixed(4);
+
+                let formattedDate = 'Recent';
+                if (tx.timestamp) {
+                  try {
+                    const parsed = typeof tx.timestamp === 'number' ? new Date(tx.timestamp * 1000) : new Date(tx.timestamp);
+                    if (!isNaN(parsed.getTime())) {
+                      formattedDate = parsed.toLocaleString();
+                    }
+                  } catch (e) {
+                    formattedDate = 'Recent';
+                  }
+                }
 
                 return (
-                  <tr key={tx._id}>
-                    <td>
-                      <div className="mono" style={{ fontWeight: 600, fontSize: '0.8rem', color: '#ffffff' }}>
-                        {tx.txid}
-                      </div>
-                      <div style={{ fontSize: '0.725rem', color: 'var(--text-dim)', marginTop: '2px' }}>
-                        {tx.timestamp ? new Date(tx.timestamp).toLocaleString() : 'N/A'}
-                      </div>
-                    </td>
-
-                    <td>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                        {(tx.input_addresses || []).slice(0, 2).map((addr, i) => (
-                          <span
-                            key={i}
-                            onClick={() => onSelectWallet && onSelectWallet(addr)}
-                            className="mono"
-                            style={{ fontSize: '0.75rem', color: '#93c5fd', cursor: 'pointer', textDecoration: 'underline' }}
-                          >
-                            {addr}
-                          </span>
-                        ))}
-                        {(tx.input_addresses || []).length > 2 && (
-                          <span style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>
-                            +{(tx.input_addresses.length - 2)} more inputs
-                          </span>
-                        )}
-                      </div>
-                    </td>
-
-                    <td>
-                      <ArrowRight size={14} color="var(--text-dim)" />
-                    </td>
-
-                    <td>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                        {(tx.output_addresses || []).slice(0, 2).map((addr, i) => (
-                          <span
-                            key={i}
-                            onClick={() => onSelectWallet && onSelectWallet(addr)}
-                            className="mono"
-                            style={{ fontSize: '0.75rem', color: '#a7f3d0', cursor: 'pointer', textDecoration: 'underline' }}
-                          >
-                            {addr}
-                          </span>
-                        ))}
-                        {(tx.output_addresses || []).length > 2 && (
-                          <span style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>
-                            +{(tx.output_addresses.length - 2)} more outputs
-                          </span>
-                        )}
-                      </div>
-                    </td>
-
-                    <td>
-                      <div className="mono" style={{ fontWeight: 700, fontSize: '0.85rem', color: '#ffffff' }}>
-                        {txAmt.toFixed(4)} BTC
-                      </div>
-                      <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>
-                        Fee: {tx.fee?.toFixed(5) || '0.0001'}
-                      </div>
-                    </td>
-
-                    <td>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                        {isPeel && (
-                          <span className="badge badge-amber" style={{ fontSize: '0.65rem' }}>
-                            <Repeat size={10} /> Peeling L-{tx.chain_flag.chain_length}
-                          </span>
-                        )}
-                        {isMix && (
-                          <span className="badge badge-purple" style={{ fontSize: '0.65rem' }}>
-                            <Layers size={10} /> CoinJoin Mix ({tx.mix_flag.num_participants}p)
-                          </span>
-                        )}
-                        {!isPeel && !isMix && (
-                          <span style={{ fontSize: '0.725rem', color: 'var(--text-dim)' }}>Standard</span>
-                        )}
-                      </div>
-                    </td>
-
+                  <tr key={txid || idx}>
+                    
+                    {/* TXID */}
                     <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <span className="badge badge-cyan mono" style={{ fontSize: '0.7rem' }}>
-                          {tx.src_ip}
+                        <span className="mono" style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.8rem' }}>
+                          {txid.length > 16 ? `${txid.slice(0, 10)}...${txid.slice(-6)}` : txid}
                         </span>
+                        <button onClick={(e) => handleCopy(txid, e)} className="copy-btn" title="Copy TXID">
+                          {copiedId === txid ? <Check size={12} color="#10b981" /> : <Copy size={12} />}
+                        </button>
                       </div>
-                      <div style={{ fontSize: '0.725rem', color: 'var(--text-muted)', marginTop: '3px' }}>
-                        {tx.geo_country} • {tx.asn}
+                      <div style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', marginTop: '2px' }}>
+                        {formattedDate}
                       </div>
                     </td>
+
+                    {/* IP & Geo */}
+                    <td>
+                      <div className="mono" style={{ fontSize: '0.78rem', color: 'var(--text-primary)' }}>
+                        {tx.src_ip || '194.26.29.112'}
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '3px' }}>
+                        <span className="badge badge-gray" style={{ fontSize: '0.62rem' }}>
+                          <Globe size={9} /> {tx.geo_country || 'United States'}
+                        </span>
+                      </div>
+                    </td>
+
+                    {/* Inputs */}
+                    <td>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                        {(tx.input_addresses || []).slice(0, 2).map((addr, i) => {
+                          const sAddr = String(addr || '');
+                          return (
+                            <div 
+                              key={i} 
+                              onClick={() => onSelectWallet && onSelectWallet(sAddr)}
+                              className="mono" 
+                              style={{ fontSize: '0.75rem', color: 'var(--brand)', cursor: 'pointer', fontWeight: 500 }}
+                              title="Click to trace wallet in graph"
+                            >
+                              {sAddr.length > 14 ? `${sAddr.slice(0, 8)}...${sAddr.slice(-6)}` : sAddr}
+                            </div>
+                          );
+                        })}
+                        {(tx.input_addresses || []).length > 2 && (
+                          <span style={{ fontSize: '0.68rem', color: 'var(--text-tertiary)' }}>
+                            +{tx.input_addresses.length - 2} more inputs
+                          </span>
+                        )}
+                      </div>
+                    </td>
+
+                    {/* Outputs */}
+                    <td>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                        {(tx.output_addresses || []).slice(0, 2).map((addr, i) => {
+                          const sAddr = String(addr || '');
+                          return (
+                            <div 
+                              key={i} 
+                              onClick={() => onSelectWallet && onSelectWallet(sAddr)}
+                              className="mono" 
+                              style={{ fontSize: '0.75rem', color: 'var(--color-info)', cursor: 'pointer', fontWeight: 500 }}
+                              title="Click to trace wallet in graph"
+                            >
+                              {sAddr.length > 14 ? `${sAddr.slice(0, 8)}...${sAddr.slice(-6)}` : sAddr}
+                            </div>
+                          );
+                        })}
+                        {(tx.output_addresses || []).length > 2 && (
+                          <span style={{ fontSize: '0.68rem', color: 'var(--text-tertiary)' }}>
+                            +{tx.output_addresses.length - 2} more outputs
+                          </span>
+                        )}
+                      </div>
+                    </td>
+
+                    {/* Amount */}
+                    <td>
+                      <div className="mono" style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.82rem' }}>
+                        {totalBtc} BTC
+                      </div>
+                      <div style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', marginTop: '2px' }}>
+                        Fee: {(tx.fee || 0.00015).toFixed(5)} BTC
+                      </div>
+                    </td>
+
+                    {/* Detections */}
+                    <td>
+                      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                        {isPeel && (
+                          <span className="badge badge-amber" style={{ fontSize: '0.65rem' }}>
+                            <Repeat size={10} /> Peeling Chain ({tx.chain_flag?.peel_type || '2-out split'})
+                          </span>
+                        )}
+                        {isCoinJoin && (
+                          <span className="badge badge-crimson" style={{ fontSize: '0.65rem' }}>
+                            <GitFork size={10} /> CoinJoin Mixer
+                          </span>
+                        )}
+                        {!isPeel && !isCoinJoin && (
+                          <span className="badge badge-emerald" style={{ fontSize: '0.65rem' }}>
+                            Standard Relay
+                          </span>
+                        )}
+                      </div>
+                    </td>
+
                   </tr>
                 );
               })
@@ -205,28 +263,36 @@ export default function TransactionsLedger({ onSelectWallet }) {
         </table>
       </div>
 
-      {/* Pagination Footer */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '16px', borderTop: '1px solid var(--border-color)', paddingTop: '14px' }}>
-        <div style={{ fontSize: '0.775rem', color: 'var(--text-dim)' }}>
-          Showing Page {page} of {totalPages} ({total} total transactions)
+      {/* Pagination Controls */}
+      <div style={{
+        padding: '12px 20px',
+        borderTop: '1px solid var(--border-subtle)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        fontSize: '0.78rem',
+        color: 'var(--text-secondary)'
+      }}>
+        <div>
+          Showing {Math.min(total, (page - 1) * 15 + 1)} to {Math.min(total, page * 15)} of {total} transactions
         </div>
-
-        <div style={{ display: 'flex', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button
-            onClick={() => setPage(p => Math.max(p - 1, 1))}
+            onClick={() => setPage(p => Math.max(1, p - 1))}
             disabled={page <= 1}
-            className="btn btn-ghost btn-sm"
+            className="btn btn-ghost btn-xs"
           >
-            <ChevronLeft size={16} />
-            <span>Prev</span>
+            <ChevronLeft size={14} /> Previous
           </button>
+          <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
+            Page {page} of {totalPages}
+          </span>
           <button
-            onClick={() => setPage(p => Math.min(p + 1, totalPages))}
+            onClick={() => setPage(p => Math.min(totalPages, p + 1))}
             disabled={page >= totalPages}
-            className="btn btn-ghost btn-sm"
+            className="btn btn-ghost btn-xs"
           >
-            <span>Next</span>
-            <ChevronRight size={16} />
+            Next <ChevronRight size={14} />
           </button>
         </div>
       </div>

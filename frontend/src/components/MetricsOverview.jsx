@@ -6,9 +6,7 @@ import {
   Repeat, 
   Layers, 
   GitFork,
-  ArrowRight,
-  ShieldCheck,
-  Cpu
+  ArrowRight
 } from 'lucide-react';
 
 export default function MetricsOverview({ stats, onNavigateTab }) {
@@ -26,11 +24,11 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
   const cards = [
     {
       id: 'txs',
-      label: 'Transactions Indexed',
+      label: 'Transactions analyzed',
       value: (data.transactions_count ?? 65).toLocaleString(),
-      sub: 'UTXO graph traces',
+      sub: 'Recorded Bitcoin activity',
       meta: `${data.graph_edges_count ?? 304} directed flows`,
-      badge: 'Blockchain',
+      badge: 'Activity',
       badgeColor: 'var(--color-info)',
       badgeBg: 'var(--color-info-surface)',
       badgeBorder: 'var(--color-info-border)',
@@ -40,11 +38,11 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
     },
     {
       id: 'wallets',
-      label: 'Monitored Entities',
+      label: 'Wallets identified',
       value: (data.wallets_count ?? 101).toLocaleString(),
-      sub: 'Unique wallet addresses',
+      sub: 'Addresses in this network',
       meta: `${data.clusters_count ?? 89} Louvain clusters`,
-      badge: 'Resolved',
+      badge: 'Entities',
       badgeColor: 'var(--brand)',
       badgeBg: 'var(--brand-surface)',
       badgeBorder: 'var(--brand-border)',
@@ -54,11 +52,11 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
     },
     {
       id: 'flags',
-      label: 'Forensic Threat Leads',
+      label: 'Threat flags',
       value: (data.flags_count ?? 23).toLocaleString(),
-      sub: `${data.high_severity_flags ?? 12} critical priority`,
+      sub: `${data.high_severity_flags ?? 12} need priority review`,
       meta: 'Isolation Forest + Heuristics',
-      badge: 'High Priority',
+      badge: 'Review first',
       badgeColor: 'var(--color-danger)',
       badgeBg: 'var(--color-danger-surface)',
       badgeBorder: 'var(--color-danger-border)',
@@ -69,9 +67,9 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
     },
     {
       id: 'peels',
-      label: 'Peeling Chains',
+      label: 'Suspected peeling chains',
       value: (data.peeling_chains_count ?? 5).toLocaleString(),
-      sub: 'Rapid hopping series',
+      sub: 'Wallets passing funds onward',
       meta: 'DFS peel heuristic',
       badge: 'Hop Analysis',
       badgeColor: 'var(--color-warning)',
@@ -83,9 +81,9 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
     },
     {
       id: 'clusters',
-      label: 'Co-Spend Clusters',
+      label: 'Wallet clusters',
       value: (data.clusters_count ?? 89).toLocaleString(),
-      sub: 'Multi-input entities',
+      sub: 'Addresses linked by shared activity',
       meta: 'DSU Modularity Q=0.74',
       badge: 'Louvain DSU',
       badgeColor: 'var(--color-purple)',
@@ -97,9 +95,9 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
     },
     {
       id: 'coinjoin',
-      label: 'Mixing & CoinJoin',
+      label: 'Mixing patterns',
       value: (data.coinjoin_mix_count ?? 8).toLocaleString(),
-      sub: 'Equal-denomination pool',
+      sub: 'Possible transaction obfuscation',
       meta: 'Whirlpool / Wasabi patterns',
       badge: 'Anonymity Pool',
       badgeColor: 'var(--color-cyan)',
@@ -112,41 +110,33 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
   ];
 
   return (
-    <div style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-      gap: '12px',
+    <div className="metrics-overview" style={{
       marginBottom: '22px'
     }}>
+      <div className="overview-intro">
+        <div>
+          <span className="overview-kicker">Bitcoin intelligence workspace</span>
+          <h1>Investigation overview</h1>
+          <p>Start with a priority flag, then trace wallets and review the evidence.</p>
+        </div>
+        <div className="overview-path" aria-label="Investigation workflow">
+          <span className="overview-path-step"><b>01</b> Review</span>
+          <ArrowRight size={14} aria-hidden="true" />
+          <span className="overview-path-step"><b>02</b> Trace</span>
+          <ArrowRight size={14} aria-hidden="true" />
+          <span className="overview-path-step"><b>03</b> Verify</span>
+        </div>
+      </div>
       {cards.map((c) => {
         const Icon = c.icon;
         return (
-          <div
+          <button
             key={c.id}
+            type="button"
             onClick={() => onNavigateTab && c.targetTab && onNavigateTab(c.targetTab)}
-            style={{
-              background: 'var(--white)',
-              border: c.isAlert ? '1px solid var(--color-danger-border)' : '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '16px 18px',
-              boxShadow: 'var(--shadow-xs)',
-              transition: 'all 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
-              cursor: onNavigateTab ? 'pointer' : 'default',
-              position: 'relative',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.boxShadow = 'var(--shadow-md)';
-              e.currentTarget.style.transform = 'translateY(-1px)';
-              e.currentTarget.style.borderColor = c.isAlert ? 'var(--color-danger)' : 'var(--border-default)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.boxShadow = 'var(--shadow-xs)';
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = c.isAlert ? 'var(--color-danger-border)' : 'var(--border-subtle)';
-            }}
+            className={`stat-overview-card ${c.isAlert ? 'alert' : ''}`}
+            aria-label={`${c.label}: ${c.value}. Open ${c.targetTab} view.`}
+            style={{ '--card-accent': c.accentColor, '--card-surface': c.badgeBg, animationDelay: `${cards.indexOf(c) * 55}ms` }}
           >
             {/* Top row: Section Label + Tag */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
@@ -228,7 +218,7 @@ export default function MetricsOverview({ stats, onNavigateTab }) {
               }} />
             </div>
 
-          </div>
+          </button>
         );
       })}
     </div>

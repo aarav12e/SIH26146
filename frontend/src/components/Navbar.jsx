@@ -7,14 +7,11 @@ import {
   FileText, 
   RotateCcw,
   Sparkles,
-  Activity,
   CheckCircle2,
   AlertCircle,
   Info,
   Zap,
-  ChevronDown,
   LogOut,
-  User,
   Lock
 } from 'lucide-react';
 
@@ -42,26 +39,15 @@ export default function Navbar({
   ];
 
   return (
-    <header style={{ 
-      position: 'sticky', top: 0, zIndex: 100,
-      background: 'rgba(255,255,255,0.95)',
-      borderBottom: '1px solid var(--border-subtle)',
-      backdropFilter: 'blur(12px)',
-      WebkitBackdropFilter: 'blur(12px)',
-      boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-    }}>
-      <div style={{ 
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between', 
-        maxWidth: '1760px', margin: '0 auto', padding: '0 28px',
-        height: '58px', gap: '16px'
-      }}>
+    <header className="app-header">
+      <div className="app-header-inner">
         
         {/* Brand */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
+          <div className="brand-lockup" style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
           <div style={{
             width: '32px', height: '32px',
             borderRadius: '9px',
-            background: 'linear-gradient(135deg, #4f46e5, #7c3aed)',
+            background: 'linear-gradient(135deg, #14b8a6, #a3e635)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             boxShadow: '0 2px 8px rgba(79,70,229,0.3)',
             flexShrink: 0
@@ -124,7 +110,7 @@ export default function Navbar({
         </div>
 
         {/* Navigation */}
-        <nav className="nav-pill-group">
+        <nav className="nav-pill-group" aria-label="Main navigation">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -134,6 +120,7 @@ export default function Navbar({
                 id={`nav-${item.id}`}
                 onClick={() => setActiveTab(item.id)}
                 className={`nav-pill ${isActive ? 'active' : ''}`}
+                aria-current={isActive ? 'page' : undefined}
               >
                 <Icon size={13} />
                 <span>{item.label}</span>
@@ -146,12 +133,14 @@ export default function Navbar({
         </nav>
 
         {/* Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+        <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
           <button
             id="btn-reload-demo"
             onClick={() => onQuickSeed('csv')}
             disabled={seeding}
             className="btn btn-secondary btn-sm"
+            title="Reload sample dataset"
+            aria-label="Reload sample dataset"
           >
             <Sparkles size={12} color="var(--brand)" className={seeding ? 'animate-spin' : ''} />
             <span>{seeding ? 'Loading…' : 'Reload Demo'}</span>
@@ -161,6 +150,8 @@ export default function Navbar({
             id="btn-reset"
             onClick={onReset}
             className="btn btn-ghost btn-sm"
+            title="Reset forensic data"
+            aria-label="Reset forensic data"
           >
             <RotateCcw size={12} />
             <span>Reset</span>
@@ -213,6 +204,8 @@ export default function Navbar({
                 id="btn-signin"
                 onClick={onShowLogin}
                 className="btn btn-primary btn-sm"
+                title="Officer login"
+                aria-label="Officer login"
                 style={{ 
                   display: 'flex',
                   alignItems: 'center',

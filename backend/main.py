@@ -1,4 +1,5 @@
 import sys
+import types
 from pathlib import Path
 import logging
 
@@ -8,6 +9,11 @@ PROJECT_ROOT = CURRENT_DIR.parent
 for p in [str(PROJECT_ROOT), str(CURRENT_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
+
+if "backend" not in sys.modules:
+    backend_pkg = types.ModuleType("backend")
+    backend_pkg.__path__ = [str(CURRENT_DIR)]
+    sys.modules["backend"] = backend_pkg
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware

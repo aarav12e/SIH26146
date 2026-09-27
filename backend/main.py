@@ -18,6 +18,8 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 )
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
 logger = logging.getLogger("bitcoin_forensics")
 
 app = FastAPI(
@@ -41,11 +43,15 @@ app.add_middleware(
 app.include_router(api_router, prefix="/api")
 
 @app.on_event("startup")
-def print_startup_status():
+async def print_startup_status():
     if db_manager.is_live_mongo:
         logger.info("[DATABASE STATUS]: Connected to MongoDB (Live Server)")
     else:
         logger.info("[DATABASE STATUS]: Connected to Offline Zero-Dependency Embedded Document Store")
+
+    # Verify Google Gemini API Key and output connection banner directly to terminal
+    from backend.api.ai import verify_gemini_connection
+    await verify_gemini_connection(print_banner=True)
 
 @app.get("/")
 def root():

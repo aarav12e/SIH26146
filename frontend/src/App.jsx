@@ -7,6 +7,7 @@ import GraphView from './components/GraphView';
 import EvidencePanel from './components/EvidencePanel';
 import ClusterView from './components/ClusterView';
 import TransactionsLedger from './components/TransactionsLedger';
+import GlobalThreatMap from './components/GlobalThreatMap';
 import ErrorBoundary from './components/ErrorBoundary';
 import LoginPage from './components/LoginPage';
 import { apiClient } from './api/client';
@@ -15,10 +16,11 @@ import {
   X
 } from 'lucide-react';
 
-const VALID_TABS = ['flags', 'graph', 'clusters', 'transactions', 'ingest'];
+const VALID_TABS = ['flags', 'map', 'graph', 'clusters', 'transactions', 'ingest'];
 
 const TAB_URL_MAP = {
   flags: '/flags',
+  map: '/map',
   graph: '/graph',
   clusters: '/clusters',
   transactions: '/transactions',
@@ -27,6 +29,7 @@ const TAB_URL_MAP = {
 
 const TAB_PAGE_TITLES = {
   flags: 'Threat Flags & Triage · NTRO Bitcoin Intelligence',
+  map: 'Global Threat Map & 3D Orbit · NTRO Bitcoin Intelligence',
   graph: 'Forensic Link Graph · NTRO Bitcoin Intelligence',
   clusters: 'Entity Clusters · NTRO Bitcoin Intelligence',
   transactions: 'UTXO Ledger Explorer · NTRO Bitcoin Intelligence',
@@ -46,13 +49,21 @@ function getTabFromUrl() {
   return 'flags';
 }
 
+const DEFAULT_OFFICER = {
+  id: 'NTRO-CR-8492',
+  name: 'Dr. Rajesh Varma',
+  title: 'Lead Cyber Forensics Officer',
+  role: 'lead_investigator',
+  badge: 'Directorate Lead'
+};
+
 export default function App() {
   const [currentUser, setCurrentUser] = useState(() => {
     try {
       const saved = localStorage.getItem('ntro_auth_user');
-      return saved ? JSON.parse(saved) : null;
+      return saved ? JSON.parse(saved) : DEFAULT_OFFICER;
     } catch {
-      return null;
+      return DEFAULT_OFFICER;
     }
   });
 
@@ -136,6 +147,20 @@ export default function App() {
       setEvidenceData(evidence);
     } catch (err) {
       console.error('Error fetching flag evidence:', err);
+    }
+  };
+
+  // When investigator clicks an entity or geo node on the Threat Map
+  const handleSelectEntity = async (entity) => {
+    setSelectedEntity(entity);
+    try {
+      const eid = entity?.id || entity?._id || entity?.flagged_id || entity?.entity_id;
+      if (eid) {
+        const evidence = await apiClient.getFlagEvidence(eid);
+        setEvidenceData(evidence);
+      }
+    } catch (err) {
+      console.error('Error fetching entity evidence:', err);
     }
   };
 
@@ -350,6 +375,13 @@ export default function App() {
                     setFlags(res.flags || []);
                   }}
                   onReloadDemo={() => handleQuickSeed('csv')}
+                />
+              )}
+
+              {activeTab === 'map' && (
+                <GlobalThreatMap
+                  onSelectEntity={handleSelectEntity}
+                  onSelectWallet={handleViewInGraph}
                 />
               )}
 

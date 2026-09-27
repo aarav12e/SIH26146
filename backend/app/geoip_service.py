@@ -83,15 +83,16 @@ class GeoIPService:
             try:
                 city_resp = self.city_reader.city(ip_clean)
                 asn_resp = self.asn_reader.asn(ip_clean) if self.asn_reader else None
-                return {
-                    "geo_country": city_resp.country.name or "Unknown",
-                    "country_code": city_resp.country.iso_code or "XX",
-                    "city": city_resp.city.name or "Unknown",
-                    "asn": f"AS{asn_resp.autonomous_system_number}" if asn_resp and asn_resp.autonomous_system_number else "AS0",
-                    "asn_org": asn_resp.autonomous_system_organization if asn_resp else "Unknown",
-                    "latitude": float(city_resp.location.latitude or 0.0),
-                    "longitude": float(city_resp.location.longitude or 0.0)
-                }
+                if city_resp.country.name and city_resp.country.name != "Unknown":
+                    return {
+                        "geo_country": city_resp.country.name,
+                        "country_code": city_resp.country.iso_code or "XX",
+                        "city": city_resp.city.name or "Unknown",
+                        "asn": f"AS{asn_resp.autonomous_system_number}" if asn_resp and asn_resp.autonomous_system_number else "AS0",
+                        "asn_org": asn_resp.autonomous_system_organization if asn_resp else "Unknown",
+                        "latitude": float(city_resp.location.latitude or 0.0),
+                        "longitude": float(city_resp.location.longitude or 0.0)
+                    }
             except Exception:
                 pass  # Fall through to offline lookup
 

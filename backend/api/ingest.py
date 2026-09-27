@@ -71,8 +71,21 @@ async def ingest_dataset(
             if src_ip:
                 geo = geoip_enricher.resolve(src_ip)
                 rec["geo_country"] = geo.get("country", "Unknown")
+                rec["geo_code"] = geo.get("code", "XX")
                 rec["geo_asn"] = geo.get("asn", "Unknown")
                 rec["geo_city"] = geo.get("city", "Unknown")
+                rec["geo_lat"] = geo.get("latitude", 0.0)
+                rec["geo_lng"] = geo.get("longitude", 0.0)
+
+            dst_ip = rec.get("dst_ip")
+            if dst_ip:
+                dgeo = geoip_enricher.resolve(dst_ip)
+                rec["dst_geo_country"] = dgeo.get("country", "Unknown")
+                rec["dst_geo_code"] = dgeo.get("code", "XX")
+                rec["dst_geo_asn"] = dgeo.get("asn", "Unknown")
+                rec["dst_geo_city"] = dgeo.get("city", "Unknown")
+                rec["dst_geo_lat"] = dgeo.get("latitude", 0.0)
+                rec["dst_geo_lng"] = dgeo.get("longitude", 0.0)
 
             rec["_id"] = str(rec.get("txid") or f"tx_{len(records)}")
 

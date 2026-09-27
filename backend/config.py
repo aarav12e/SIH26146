@@ -2,11 +2,14 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
-
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
+
+# Load environment variables from backend/.env and project root .env
+load_dotenv(BASE_DIR / ".env")
+load_dotenv(PROJECT_ROOT / ".env")
+load_dotenv()
+
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
 UPLOADS_DIR = DATA_DIR / "uploads"
@@ -21,8 +24,24 @@ MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 DB_NAME = os.getenv("DB_NAME", "bitcoin_forensics")
 USE_OFFLINE_STORAGE = os.getenv("USE_OFFLINE_STORAGE", "auto").lower()
 
+def get_gemini_api_key() -> str:
+    """Hot-reads backend/.env and project root .env directly to pick up real-time key additions."""
+    for env_file in [BASE_DIR / ".env", PROJECT_ROOT / ".env"]:
+        if env_file.is_file():
+            try:
+                for line in env_file.read_text(encoding="utf-8").splitlines():
+                    line = line.strip()
+                    if line.startswith("GEMINI_API_KEY=") and not line.startswith("#"):
+                        val = line.split("=", 1)[1].strip().strip('"').strip("'")
+                        if val:
+                            return val
+            except Exception:
+                pass
+    
+    return os.getenv("GEMINI_API_KEY", "").strip()
+
 # AI Intelligence (Google Gemini)
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_API_KEY = get_gemini_api_key()
 
 # Pipeline & ML Thresholds (NTRO §6)
 ANOMALY_CONTAMINATION = float(os.getenv("ANOMALY_CONTAMINATION", "0.15"))

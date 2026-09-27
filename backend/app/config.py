@@ -29,8 +29,13 @@ DB_NAME = os.getenv("DB_NAME", "bitcoin_forensics")
 OFFLINE_DB_PATH = Path(os.getenv("OFFLINE_DB_PATH", str(DATA_DIR / "offline_db.json")))
 
 # GeoIP Configuration
-GEOIP_CITY_MMDB = Path(os.getenv("GEOIP_CITY_MMDB", str(DATA_DIR / "GeoLite2-City.mmdb")))
-GEOIP_ASN_MMDB = Path(os.getenv("GEOIP_ASN_MMDB", str(DATA_DIR / "GeoLite2-ASN.mmdb")))
+GEOIP_ROOT_DIR = ROOT_DIR / "data" / "geoip"
+GEOIP_CITY_MMDB = Path(os.getenv("GEOIP_CITY_MMDB", str(GEOIP_ROOT_DIR / "GeoLite2-City.mmdb")))
+GEOIP_ASN_MMDB = Path(os.getenv("GEOIP_ASN_MMDB", str(GEOIP_ROOT_DIR / "GeoLite2-ASN.mmdb")))
+if not GEOIP_CITY_MMDB.exists() and (DATA_DIR / "GeoLite2-City.mmdb").exists():
+    GEOIP_CITY_MMDB = DATA_DIR / "GeoLite2-City.mmdb"
+if not GEOIP_ASN_MMDB.exists() and (DATA_DIR / "GeoLite2-ASN.mmdb").exists():
+    GEOIP_ASN_MMDB = DATA_DIR / "GeoLite2-ASN.mmdb"
 
 # Anomaly & Risk Thresholds
 ANOMALY_CONTAMINATION = float(os.getenv("ANOMALY_CONTAMINATION", "0.15"))

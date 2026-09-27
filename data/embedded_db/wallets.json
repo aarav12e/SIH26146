@@ -205,8 +205,8 @@
     "_id": "bc1q_norm_0006",
     "entity_id": "7",
     "embedding_neighbors": [
-      "bc1q_norm_0024",
       "bc1q_norm_0013",
+      "bc1q_norm_0024",
       "bc1q_norm_0015",
       "bc1q_norm_0010"
     ],
@@ -472,8 +472,8 @@
     "_id": "bc1q_norm_0008",
     "entity_id": "15",
     "embedding_neighbors": [
-      "bc1q_norm_0017",
-      "bc1q_norm_0002"
+      "bc1q_norm_0002",
+      "bc1q_norm_0017"
     ],
     "anomaly_score": 0.57,
     "risk_score": 0.2
@@ -650,8 +650,8 @@
     "_id": "bc1q_norm_0017",
     "entity_id": "21",
     "embedding_neighbors": [
-      "bc1q_norm_0021",
-      "bc1q_norm_0008"
+      "bc1q_norm_0008",
+      "bc1q_norm_0021"
     ],
     "anomaly_score": 0.444,
     "risk_score": 0.156
@@ -765,8 +765,8 @@
     "_id": "bc1q_peel_master_darknet",
     "entity_id": "25",
     "embedding_neighbors": [
-      "bc1q_peel_chg_000",
-      "bc1q_peel_sink_000"
+      "bc1q_peel_sink_000",
+      "bc1q_peel_chg_000"
     ],
     "anomaly_score": 0.753,
     "risk_score": 0.64,
@@ -1118,8 +1118,8 @@
     "_id": "bc1q_peel_chg_005",
     "entity_id": "37",
     "embedding_neighbors": [
-      "bc1q_peel_sink_006",
-      "bc1q_peel_chg_006"
+      "bc1q_peel_chg_006",
+      "bc1q_peel_sink_006"
     ],
     "anomaly_score": 0.481,
     "risk_score": 0.201
@@ -1177,8 +1177,8 @@
     "_id": "bc1q_peel_chg_006",
     "entity_id": "39",
     "embedding_neighbors": [
-      "bc1q_peel_sink_007",
-      "bc1q_mixer_input_001"
+      "bc1q_mixer_input_001",
+      "bc1q_peel_sink_007"
     ],
     "anomaly_score": 0.475,
     "risk_score": 0.188
@@ -1261,9 +1261,9 @@
     "_id": "bc1q_mix_in_000",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_0_1",
+      "bc1q_mix_clean_0_2",
       "bc1q_mix_clean_0_0",
-      "bc1q_mix_clean_0_2"
+      "bc1q_mix_clean_0_1"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -1296,11 +1296,11 @@
     "_id": "bc1q_mixer_layering_core",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_1_2",
-      "bc1q_mix_clean_4_1",
-      "bc1q_mix_clean_9_0",
       "bc1q_mix_clean_7_2",
-      "bc1q_mix_clean_8_0"
+      "bc1q_mix_clean_3_1",
+      "bc1q_mix_clean_2_0",
+      "bc1q_mix_clean_10_2",
+      "bc1q_mix_clean_4_2"
     ],
     "anomaly_score": 0.889,
     "risk_score": 0.756,
@@ -1635,9 +1635,9 @@
     "_id": "bc1q_mix_in_003",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_3_2",
+      "bc1q_mix_clean_3_1",
       "bc1q_mix_clean_3_0",
-      "bc1q_mix_clean_3_1"
+      "bc1q_mix_clean_3_2"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -1859,9 +1859,9 @@
     "_id": "bc1q_mix_in_005",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_5_1",
+      "bc1q_mix_clean_5_2",
       "bc1q_mix_clean_5_0",
-      "bc1q_mix_clean_5_2"
+      "bc1q_mix_clean_5_1"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -1971,8 +1971,8 @@
     "_id": "bc1q_mix_in_006",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_6_1",
       "bc1q_mix_clean_6_0",
+      "bc1q_mix_clean_6_1",
       "bc1q_mix_clean_6_2"
     ],
     "anomaly_score": 0.124,
@@ -2083,9 +2083,9 @@
     "_id": "bc1q_mix_in_007",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_7_1",
       "bc1q_mix_clean_7_2",
-      "bc1q_mix_clean_7_0"
+      "bc1q_mix_clean_7_0",
+      "bc1q_mix_clean_7_1"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -2195,8 +2195,8 @@
     "_id": "bc1q_mix_in_008",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_8_2",
       "bc1q_mix_clean_8_0",
+      "bc1q_mix_clean_8_2",
       "bc1q_mix_clean_8_1"
     ],
     "anomaly_score": 0.124,
@@ -2307,9 +2307,9 @@
     "_id": "bc1q_mix_in_009",
     "entity_id": "42",
     "embedding_neighbors": [
+      "bc1q_mix_clean_9_2",
       "bc1q_mix_clean_9_0",
-      "bc1q_mix_clean_9_1",
-      "bc1q_mix_clean_9_2"
+      "bc1q_mix_clean_9_1"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -2419,9 +2419,9 @@
     "_id": "bc1q_mix_in_010",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_10_2",
+      "bc1q_mix_clean_10_1",
       "bc1q_mix_clean_10_0",
-      "bc1q_mix_clean_10_1"
+      "bc1q_mix_clean_10_2"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -2531,9 +2531,9 @@
     "_id": "bc1q_mix_in_011",
     "entity_id": "42",
     "embedding_neighbors": [
-      "bc1q_mix_clean_11_2",
+      "bc1q_mix_clean_11_1",
       "bc1q_mix_clean_11_0",
-      "bc1q_mix_clean_11_1"
+      "bc1q_mix_clean_11_2"
     ],
     "anomaly_score": 0.124,
     "risk_score": 0.043
@@ -2652,10 +2652,10 @@
     "entity_id": "79",
     "embedding_neighbors": [
       "bc1q_smurf_mule_06",
-      "bc1q_smurf_mule_02",
-      "bc1q_smurf_mule_07",
       "bc1q_smurf_mule_09",
-      "bc1q_smurf_mule_03"
+      "bc1q_smurf_mule_01",
+      "bc1q_smurf_mule_03",
+      "bc1q_smurf_mule_04"
     ],
     "anomaly_score": 1.0,
     "risk_score": 0.85,

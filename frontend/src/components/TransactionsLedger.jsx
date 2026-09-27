@@ -8,7 +8,9 @@ import {
   Copy,
   Check,
   Globe,
-  GitFork
+  GitFork,
+  MapPin,
+  Server
 } from 'lucide-react';
 import { apiClient } from '../api/client';
 
@@ -162,15 +164,26 @@ export default function TransactionsLedger({ onSelectWallet }) {
                       </div>
                     </td>
 
-                    {/* IP & Geo */}
+                    {/* IP & MaxMind Geo */}
                     <td>
-                      <div className="mono" style={{ fontSize: '0.78rem', color: 'var(--text-primary)' }}>
+                      <div className="mono" style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                        <Server size={11} color="var(--brand)" />
                         {tx.src_ip || '194.26.29.112'}
                       </div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '3px' }}>
-                        <span className="badge badge-gray" style={{ fontSize: '0.62rem' }}>
-                          <Globe size={9} /> {tx.geo_country || 'United States'}
+                      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px', marginTop: '4px' }}>
+                        <span className="badge badge-emerald" style={{ fontSize: '0.64rem', padding: '1px 6px' }}>
+                          <Globe size={9} /> {tx.geo_city ? `${tx.geo_city}, ` : ''}{tx.geo_country || 'United States'}
                         </span>
+                        {tx.geo_asn && (
+                          <span className="badge badge-gray mono" style={{ fontSize: '0.60rem', padding: '1px 5px' }} title={tx.geo_asn}>
+                            {tx.geo_asn.length > 18 ? `${tx.geo_asn.slice(0, 16)}...` : tx.geo_asn}
+                          </span>
+                        )}
+                        {tx.geo_lat && tx.geo_lat !== 0 ? (
+                          <span className="badge badge-purple mono" style={{ fontSize: '0.58rem', padding: '1px 4px' }} title={`GPS Coordinates: ${tx.geo_lat}, ${tx.geo_lng}`}>
+                            <MapPin size={8} /> {Number(tx.geo_lat).toFixed(2)}°, {Number(tx.geo_lng).toFixed(2)}°
+                          </span>
+                        ) : null}
                       </div>
                     </td>
 

@@ -93,7 +93,17 @@ class GeoIPEnricher:
                         asn_str = f"AS{asn_resp.autonomous_system_number} {asn_resp.autonomous_system_organization or ''}".strip()
                     except Exception:
                         pass
-                return {"country": country, "code": iso_code, "city": city, "asn": asn_str}
+                latitude = float(response.location.latitude or 0.0) if response.location else 0.0
+                longitude = float(response.location.longitude or 0.0) if response.location else 0.0
+                if country != "Unknown":
+                    return {
+                        "country": country,
+                        "code": iso_code,
+                        "city": city,
+                        "asn": asn_str,
+                        "latitude": latitude,
+                        "longitude": longitude
+                    }
             except Exception:
                 pass
 
@@ -107,12 +117,21 @@ class GeoIPEnricher:
                         "country": data["country"],
                         "code": data["code"],
                         "city": data["city"],
-                        "asn": f"{data['asn']} {data['asn_org']}"
+                        "asn": f"{data['asn']} {data['asn_org']}",
+                        "latitude": data.get("latitude", 0.0),
+                        "longitude": data.get("longitude", 0.0)
                     }
         except ValueError:
             pass
 
         # Fallback default
-        return {"country": "United States", "code": "US", "city": "Unknown", "asn": "AS16509 Cloud Network"}
+        return {
+            "country": "United States",
+            "code": "US",
+            "city": "Unknown",
+            "asn": "AS16509 Cloud Network",
+            "latitude": 37.751,
+            "longitude": -97.822
+        }
 
 geoip_enricher = GeoIPEnricher()

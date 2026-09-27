@@ -9,7 +9,7 @@ for p in [str(PROJECT_ROOT), str(BACKEND_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-# Alias app from backend.main for 100% backwards compatibility with running servers
+# Alias app from backend.main for 100% backwards compatibility with running servers (Includes Gemini AI Terminal Banner)
 from backend.main import app, db_manager
 
 __all__ = ["app", "db_manager"]

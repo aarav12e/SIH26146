@@ -15,7 +15,8 @@ import {
   ChevronDown,
   LogOut,
   User,
-  Lock
+  Lock,
+  Globe
 } from 'lucide-react';
 
 export default function Navbar({ 
@@ -35,6 +36,7 @@ export default function Navbar({
 
   const navItems = [
     { id: 'flags',        label: 'Threat Flags',     icon: ShieldAlert,  count: stats?.flags_count ?? 23 },
+    { id: 'map',          label: 'Threat Map',       icon: Globe,        count: '3D/2D' },
     { id: 'graph',        label: 'Link Graph',        icon: Share2,       count: stats?.graph_edges_count ?? 304 },
     { id: 'clusters',     label: 'Entity Clusters',   icon: Layers,       count: stats?.clusters_count ?? 89 },
     { id: 'transactions', label: 'Ledger',            icon: FileText,     count: stats?.transactions_count ?? 65 },

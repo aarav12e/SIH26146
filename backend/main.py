@@ -11,8 +11,13 @@ for p in [str(PROJECT_ROOT), str(CURRENT_DIR)]:
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api import api_router
-from backend.db.mongo_client import db_manager
+
+try:
+    from backend.api import api_router
+    from backend.db.mongo_client import db_manager
+except ImportError:
+    from api import api_router
+    from db.mongo_client import db_manager
 
 logging.basicConfig(
     level=logging.INFO,

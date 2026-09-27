@@ -5,12 +5,14 @@ CURRENT_DIR = Path(__file__).resolve().parent
 BACKEND_DIR = CURRENT_DIR.parent
 PROJECT_ROOT = BACKEND_DIR.parent
 
-for p in [str(PROJECT_ROOT), str(BACKEND_DIR)]:
+for p in [str(PROJECT_ROOT), str(BACKEND_DIR), str(CURRENT_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-# Alias app from backend.main for 100% backwards compatibility with running servers (Includes Gemini AI Terminal Banner)
-from backend.main import app, db_manager
+try:
+    from backend.main import app, db_manager
+except ImportError:
+    from main import app, db_manager
 
 __all__ = ["app", "db_manager"]
 

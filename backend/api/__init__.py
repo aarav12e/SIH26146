@@ -7,8 +7,10 @@ from backend.api.graph import router as graph_router
 from backend.api.analyze import router as analyze_router
 from backend.api.stats import router as stats_router
 from backend.api.ai import router as ai_router
+from backend.api.auth import router as auth_router
 
 api_router = APIRouter()
+api_router.include_router(auth_router, tags=["Authentication & Officers"])
 api_router.include_router(ingest_router, tags=["Ingestion"])
 api_router.include_router(wallets_router, tags=["Wallets"])
 api_router.include_router(flags_router, tags=["Flags"])

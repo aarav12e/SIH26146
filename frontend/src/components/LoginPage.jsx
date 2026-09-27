@@ -160,20 +160,23 @@ export default function LoginPage({ onLogin, onCancel }) {
     setPasscode('••••••••••••');
   };
 
-  const handleLoginSubmit = (e) => {
+  const handleLoginSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setAuthStep('Verifying cryptographic token & local hardware enclave...');
+    setAuthStep('Connecting to MongoDB & verifying cryptographic credentials...');
 
-    setTimeout(() => {
-      setAuthStep('Clearance confirmed. Initializing Bitcoin forensic workspace...');
+    try {
+      const res = await apiClient.login(badgeId, passcode, role);
+      setAuthStep(`Clearance verified via ${res.db_mode || 'MongoDB'}. Initializing workspace...`);
+
       setTimeout(() => {
-        const activeProfile = demoProfiles.find(p => p.id === badgeId) || {
-          id: badgeId,
-          name: badgeId.startsWith('NTRO') ? 'Dr. Rajesh Varma' : 'Investigator Analyst',
-          title: 'Forensics Specialist',
-          role: role,
-          badge: 'Verified Officer'
+        const activeProfile = {
+          id: res.officer?.badge_id || badgeId,
+          name: res.officer?.name || (badgeId.startsWith('NTRO') ? 'Dr. Rajesh Varma' : 'Capt. Ananya Sen'),
+          title: res.officer?.title || 'Cyber Forensics Specialist',
+          role: res.officer?.role || role,
+          badge: res.officer?.badge || 'Verified Officer',
+          token: res.token
         };
 
         if (rememberMe) {
@@ -182,8 +185,11 @@ export default function LoginPage({ onLogin, onCancel }) {
 
         setLoading(false);
         onLogin(activeProfile);
-      }, 650);
-    }, 750);
+      }, 500);
+    } catch (err) {
+      setLoading(false);
+      setAuthStep(null);
+    }
   };
 
   return (
